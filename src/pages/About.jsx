@@ -5,10 +5,20 @@ import {
   FaPython,
   FaExternalLinkAlt,
   FaGithub,
+  FaRobot,
 } from "react-icons/fa";
-import { FaAws, FaReact } from "react-icons/fa6";
+import { FaAws, FaReact, FaJava } from "react-icons/fa6";
 import { FiFramer } from "react-icons/fi";
-import { SiTerraform, SiJavascript, SiTailwindcss } from "react-icons/si";
+import {
+  SiTerraform,
+  SiJavascript,
+  SiTailwindcss,
+  SiSpringboot,
+  SiPostgresql,
+  SiAmazondynamodb,
+} from "react-icons/si";
+import { MdTimeline } from "react-icons/md";
+import { IoLogoFirebase } from "react-icons/io5";
 import { motion } from "framer-motion";
 const About = () => {
   return (
@@ -61,8 +71,8 @@ const About = () => {
                   Video Face Recognistion
                 </div>
                 <div className="max-w-xs text-sm font-normal text-gray-500">
-                  An app for detecting faces in a video, built using{" "}
-                  <span className="font-sans font-medium">AWS</span> services.
+                  An app for detecting faces in a video, built using amazon web
+                  services.
                 </div>
                 <div className="hidden md:flex mt-4 flex-row space-x-2 items-center">
                   <FaPython />
@@ -103,6 +113,109 @@ const About = () => {
           <div className="mt-5 p-2 group">
             <motion.div
               className="p-2 hover:cursor-pointer"
+              whileHover={{
+                scale: 1.1,
+                textShadow: "0px 0px 8px rgb(255,255,255)",
+                boxShadow: "0px 0px 8px rgb(255,255,255)",
+              }}
+            >
+              <div>
+                <FaRobot className="w-8 h-8 rounded-lg text-white bg-black p-2 mb-3" />
+                <div className="text-sm mb-1 font-medium text-gray-900">
+                  Lead Outreach Automation
+                </div>
+                <div className="max-w-xs text-sm font-normal text-gray-500">
+                  Automating omni-channel communication for lead outreach and
+                  financial services.
+                </div>
+                <div className="hidden md:flex mt-4 flex-row space-x-2 items-center">
+                  <FaJava />
+                  <SiSpringboot />
+                  <SiPostgresql />
+                  <SiAmazondynamodb />
+                  <FaReact />
+                  <SiTailwindcss />
+                </div>
+                <div className="mt-4 flex flex-row space-x-4 justify-start">
+                  <motion.a
+                    href="https://main.d1qf7izi91xox1.amplifyapp.com/"
+                    target="_blank"
+                    className="flex items-center text-sm text-gray-500 hover:font-semibold hover:text-gray-900 transition-colors"
+                    whileHover={{
+                      scale: 1.05,
+                    }}
+                  >
+                    <FaExternalLinkAlt className="mr-1" />
+                    <span className="underline hover:no-underline">Demo</span>
+                  </motion.a>
+                  <motion.a
+                    href="https://github.com/prudhvideep/Workflow-Generator"
+                    target="_blank"
+                    className="flex items-center text-sm text-gray-500 hover:font-semibold hover:text-gray-900 transition-colors"
+                    whileHover={{
+                      scale: 1.05,
+                    }}
+                  >
+                    <FaGithub className="mr-1" />
+                    <span className="underline hover:no-underline">Source</span>
+                  </motion.a>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+          <div className="mt-5 p-2 group">
+            <motion.div
+              className="p-2 hover:cursor-pointer"
+              whileHover={{
+                scale: 1.1,
+                textShadow: "0px 0px 8px rgb(255,255,255)",
+                boxShadow: "0px 0px 8px rgb(255,255,255)",
+              }}
+            >
+              <div>
+                <MdTimeline className="w-8 h-8 rounded-lg text-white bg-black p-2 mb-3" />
+                <div className="text-sm mb-1 font-medium text-gray-900">
+                  Ease Abode
+                </div>
+                <div className="max-w-xs text-sm font-normal text-gray-500">
+                  An app that simplifies living in shared spaces by
+                  streamlining tasks, expenses and reminders.
+                </div>
+                <div className="hidden md:flex mt-4 flex-row space-x-2 items-center">
+                  <IoLogoFirebase />
+                  <FaReact />
+                  <SiTailwindcss />
+                </div>
+                <div className="mt-4 flex flex-row space-x-4 justify-start">
+                  <motion.a
+                    href="https://main.dnps4nuz4t58p.amplifyapp.com/"
+                    target="_blank"
+                    className="flex items-center text-sm text-gray-500 hover:font-semibold hover:text-gray-900 transition-colors"
+                    whileHover={{
+                      scale: 1.05,
+                    }}
+                  >
+                    <FaExternalLinkAlt className="mr-1" />
+                    <span className="underline hover:no-underline">Demo</span>
+                  </motion.a>
+                  <motion.a
+                    href="https://github.com/prudhvideep/ease-abode"
+                    target="_blank"
+                    className="flex items-center text-sm text-gray-500 hover:font-semibold hover:text-gray-900 transition-colors"
+                    whileHover={{
+                      scale: 1.05,
+                    }}
+                  >
+                    <FaGithub className="mr-1" />
+                    <span className="underline hover:no-underline">Source</span>
+                  </motion.a>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+          <div className="mt-5 p-2 group">
+            <motion.div
+              className="p-2 hover:cursor-pointer"
               whileHover={{ scale: 1.1 }}
             >
               <TbLetterP className="w-8 h-8 rounded-lg text-white bg-black p-2 mb-3" />
@@ -110,7 +223,8 @@ const About = () => {
                 Portfolio
               </div>
               <div className="max-w-xs text-sm font-normal text-gray-500">
-                Highlight your work using this minimal template.
+                Highlight your work and acheivements using this minimal
+                template.
               </div>
               <div className="hidden md:flex mt-4 flex-row space-x-2 items-center">
                 <SiJavascript />
