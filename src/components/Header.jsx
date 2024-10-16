@@ -2,16 +2,14 @@ import github from "../media/github.svg";
 import x from "../media/x.svg";
 import linkedin from "../media/linkedin.svg";
 import profilePic from "../media/profile.jpg";
-import { motion } from "framer-motion";
+import { FaMedium } from "react-icons/fa6";
+
 
 const Header = () => {
   return (
     <div className="border-b ml-auto mr-auto w-9/10 md:w-9/10 max-w-3xl">
       <div className="mt-8 ">
-        <motion.div
-          initial={{ y : -100 }}
-          animate={{ y : 0 }}
-          transition={{ delay: 0.2, type : "spring", stiffness : 120}}
+        <div
           className="mb-4 rounded-full bg-gray-100 w-14 h-14 overflow-hidden"
         >
           <img
@@ -19,7 +17,7 @@ const Header = () => {
             alt="Profile"
             className="w-full h-full object-cover"
           />
-        </motion.div>
+        </div>
         <div className="mt-2">
           <h1 className="text-xl font-medium font-heading text-gray-900">
             Prudhvi Deep
@@ -40,6 +38,13 @@ const Header = () => {
             rel="noreferrer"
           >
             <img src={github} alt="Github" className="w-6 h-6" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/prudhvideep/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={linkedin} alt="Github" className="w-6 h-6" />
           </a>
           <a
             href="https://www.linkedin.com/in/prudhvideep/"

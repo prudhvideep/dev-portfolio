@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const ToolBar = () => {
   const navigate = useNavigate();
-  const [selectedStatus, setSelectedStatus] = useState("About");
+  const location = useLocation();
+
+  const [selectedStatus, setSelectedStatus] = useState("");
 
   useEffect(() => {
-    return () => {
-      navigate("/");
-      setSelectedStatus("About");
-    };
-  }, []);
+    let pathname = location.pathname.split("/")[1] || "About";
+    setSelectedStatus(pathname);
+  }, [location]);
 
   const handleClick = (status) => {
     setSelectedStatus(status);
@@ -49,7 +49,7 @@ const ToolBar = () => {
           }`}
           onClick={() => handleClick("Blogs")}
         >
-          Blogs
+          Blog
         </motion.button>
         <motion.button
           initial={{ opacity: 0 }}

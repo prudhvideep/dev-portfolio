@@ -7,20 +7,29 @@ import {
   FaGithub,
   FaRobot,
 } from "react-icons/fa";
-import { FaAws, FaReact, FaJava } from "react-icons/fa6";
+import { FaAws, FaReact } from "react-icons/fa6";
 import { FiFramer } from "react-icons/fi";
 import {
   SiTerraform,
   SiJavascript,
   SiTailwindcss,
   SiSpringboot,
-  SiPostgresql,
   SiAmazondynamodb,
+  SiAwslambda,
 } from "react-icons/si";
 import { MdTimeline } from "react-icons/md";
 import { IoLogoFirebase } from "react-icons/io5";
+import { RiJavaLine } from "react-icons/ri";
 import { motion } from "framer-motion";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
 const About = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/Blogs");
+  }
+
   return (
     <div className="mt-10 ml-auto mr-auto w-9/10 md:w-9/10 max-w-3xl opacity:1 transform:none">
       <p className="text-[17px] font-serif text-gray-500">
@@ -52,9 +61,16 @@ const About = () => {
             </div>
           </li>
         </ol>
+        <div
+          onClick={handleClick}
+          className="hover:underline text-sm hover:cursor-pointer"
+          aria-label="Read more blogs"
+        >
+          View Details
+        </div>
       </div>
-      <div className="mt-16">
-        <h1 className="font-medium text-gray-900 mb-4 text-lg">Projects</h1>
+      <div className="mt-10">
+        <h1 className="font-medium text-gray-900 mb-4 text-lg">Projects / Oss</h1>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-x-10 gap-y-5">
           <div className="mt-5 p-2 group">
             <motion.div
@@ -129,16 +145,16 @@ const About = () => {
                   financial services.
                 </div>
                 <div className="hidden md:flex mt-4 flex-row space-x-2 items-center">
-                  <FaJava />
+                  <RiJavaLine className="text-lg" />
                   <SiSpringboot />
-                  <SiPostgresql />
+                  <BiLogoPostgresql className="text-lg" />
                   <SiAmazondynamodb />
                   <FaReact />
                   <SiTailwindcss />
                 </div>
                 <div className="mt-4 flex flex-row space-x-4 justify-start">
                   <motion.a
-                    href="https://main.d1qf7izi91xox1.amplifyapp.com/"
+                    href="https://main.d33hnvrtcy55fk.amplifyapp.com"
                     target="_blank"
                     className="flex items-center text-sm text-gray-500 hover:font-semibold hover:text-gray-900 transition-colors"
                     whileHover={{
@@ -149,7 +165,7 @@ const About = () => {
                     <span className="underline hover:no-underline">Demo</span>
                   </motion.a>
                   <motion.a
-                    href="https://github.com/prudhvideep/Workflow-Generator"
+                    href="https://github.com/prudhvideep/Lead-Outreach-Automation"
                     target="_blank"
                     className="flex items-center text-sm text-gray-500 hover:font-semibold hover:text-gray-900 transition-colors"
                     whileHover={{
@@ -178,11 +194,12 @@ const About = () => {
                   Ease Abode
                 </div>
                 <div className="max-w-xs text-sm font-normal text-gray-500">
-                  An app that simplifies living in shared spaces by
-                  streamlining tasks, expenses and reminders.
+                  An app that simplifies living in shared spaces by streamlining
+                  tasks, expenses and reminders.
                 </div>
                 <div className="hidden md:flex mt-4 flex-row space-x-2 items-center">
                   <IoLogoFirebase />
+                  <SiAwslambda />
                   <FaReact />
                   <SiTailwindcss />
                 </div>
@@ -247,6 +264,30 @@ const About = () => {
               </div>
             </motion.div>
           </div>
+        </div>
+      </div>
+      <div className="mt-10">
+        <h1 className="font-medium text-gray-900 mb-4 text-lg">Latest Blogs</h1>
+        <a
+          href="https://medium.com/p/e28f71a6b8ab"
+          target="_blank"
+          className="flex flex-col space-y-1 mb-4 hover:bg-gray-100 hover:rounded-md p-2 hover:underline hover:cursor-pointer"
+        >
+          <div className="w-full flex flex-col justify-center">
+            <div className="flex items-center gap-2">
+              <p className="text-gray-500 text-xs">2024-04-26</p>
+              <p className="text-gray-900 text-lg font-medium tracking-tight">
+                Deploying Open Ai API on AWS lambda
+              </p>
+            </div>
+          </div>
+        </a>
+        <div
+          onClick={handleClick}
+          className="hover:underline text-sm hover:cursor-pointer"
+          aria-label="Read more blogs"
+        >
+          Read More
         </div>
       </div>
     </div>
