@@ -7,7 +7,7 @@ import {
   FaGithub,
   FaRobot,
 } from "react-icons/fa";
-import { FaAws, FaReact } from "react-icons/fa6";
+import { FaAws, FaReact, FaTerminal, FaGolang } from "react-icons/fa6";
 import { FiFramer } from "react-icons/fi";
 import {
   SiTerraform,
@@ -23,12 +23,14 @@ import { RiJavaLine } from "react-icons/ri";
 import { motion } from "framer-motion";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
+import { TbBrandGolang } from "react-icons/tb";
+
 const About = () => {
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate("/Blogs");
-  }
+  const handleExperience = () => {
+    navigate("/Experience");
+  };
 
   return (
     <div className="mt-10 ml-auto mr-auto w-9/10 md:w-9/10 max-w-3xl opacity:1 transform:none">
@@ -62,7 +64,7 @@ const About = () => {
           </li>
         </ol>
         <div
-          onClick={handleClick}
+          onClick={handleExperience}
           className="hover:underline text-sm hover:cursor-pointer"
           aria-label="Read more blogs"
         >
@@ -70,8 +72,46 @@ const About = () => {
         </div>
       </div>
       <div className="mt-10">
-        <h1 className="font-medium text-gray-900 mb-4 text-lg">Projects / Oss</h1>
+        <h1 className="font-medium text-gray-900 mb-4 text-lg">
+          Projects / Oss
+        </h1>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-x-10 gap-y-5">
+          <div className="mt-5 p-2 group">
+            <motion.div
+              className="p-2 hover:cursor-pointer"
+              whileHover={{
+                scale: 1.1,
+                textShadow: "0px 0px 8px rgb(255,255,255)",
+                boxShadow: "0px 0px 8px rgb(255,255,255)",
+              }}
+            >
+              <div>
+                <FaTerminal className="w-8 h-8 rounded-lg text-white bg-black p-2 mb-3" />
+                <div className="text-sm mb-1 font-medium text-gray-900">
+                  fnd
+                </div>
+                <div className="max-w-xs text-sm font-normal text-gray-500">
+                A CLI tool for fast local and SSH file searches, supporting regex and glob patterns.
+                </div>
+                <div className="hidden md:flex mt-2 flex-row space-x-2 items-center">
+                  <FaGolang className="text-3xl" />
+                </div>
+                <div className="mt-4 flex flex-row space-x-4 justify-start">
+                  <motion.a
+                    href="https://github.com/prudhvideep/fnd"
+                    target="_blank"
+                    className="flex items-center text-sm text-gray-500 hover:font-semibold hover:text-gray-900 transition-colors"
+                    whileHover={{
+                      scale: 1.05,
+                    }}
+                  >
+                    <FaGithub className="mr-1" />
+                    <span className="underline hover:no-underline">Source</span>
+                  </motion.a>
+                </div>
+              </div>
+            </motion.div>
+          </div>
           <div className="mt-5 p-2 group">
             <motion.div
               className="p-2 hover:cursor-pointer"
@@ -283,7 +323,7 @@ const About = () => {
           </div>
         </a>
         <div
-          onClick={handleClick}
+          onClick={() => navigate("/Blogs")}
           className="hover:underline text-sm hover:cursor-pointer"
           aria-label="Read more blogs"
         >

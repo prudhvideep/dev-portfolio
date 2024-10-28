@@ -2,7 +2,6 @@ import github from "../media/github.svg";
 import x from "../media/x.svg";
 import linkedin from "../media/linkedin.svg";
 import profilePic from "../media/profile.jpg";
-import { FaMedium } from "react-icons/fa6";
 
 
 const Header = () => {
@@ -38,13 +37,6 @@ const Header = () => {
             rel="noreferrer"
           >
             <img src={github} alt="Github" className="w-6 h-6" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/prudhvideep/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={linkedin} alt="Github" className="w-6 h-6" />
           </a>
           <a
             href="https://www.linkedin.com/in/prudhvideep/"
