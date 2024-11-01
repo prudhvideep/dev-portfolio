@@ -23,14 +23,9 @@ import { RiJavaLine } from "react-icons/ri";
 import { motion } from "framer-motion";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
-import { TbBrandGolang } from "react-icons/tb";
 
 const About = () => {
   const navigate = useNavigate();
-
-  const handleExperience = () => {
-    navigate("/Experience");
-  };
 
   return (
     <div className="mt-10 ml-auto mr-auto w-9/10 md:w-9/10 max-w-3xl opacity:1 transform:none">
@@ -64,7 +59,7 @@ const About = () => {
           </li>
         </ol>
         <div
-          onClick={handleExperience}
+          onClick={() => navigate("/Experience")}
           className="hover:underline text-sm hover:cursor-pointer"
           aria-label="Read more blogs"
         >
@@ -304,6 +299,12 @@ const About = () => {
               </div>
             </motion.div>
           </div>
+        </div>
+        <div
+          onClick={() => navigate("/Projects")}
+          className="mt-4 hover:underline text-sm hover:cursor-pointer"
+        >
+          Read More
         </div>
       </div>
       <div className="mt-10">

@@ -1,0 +1,21 @@
+[
+  {
+    "Title": "fnd",
+    "Desciption": "fnd is a versatile, intuitive file search utility for both local and remote environments.",
+    "Stack": ["Go"],
+    "Link" : "https://github.com/prudhvideep/fnd"
+  },
+  {
+    "Title": "Video Face Recognition",
+    "Desciption": "An app for detecting faces in a video, built using amazon web services.",
+    "Stack": ["Python","Docker","Terraform","aws","JavaScript","React","TailwindCss"],
+    "Link" : "https://github.com/prudhvideep/Video-Face-Recognition",
+    "Demo" : "https://main.d2g4ycz7ogc8gz.amplifyapp.com/"
+  },
+  {
+    "Title": "Dev Portfolio",
+    "Desciption": "Highlight your work and acheivements using this minimal template.",
+    "Stack": ["JavaScript","React","Tailwind","Framer Motion"],
+    "Link" : "https://github.com/prudhvideep/dev-portfolio"
+  }
+]

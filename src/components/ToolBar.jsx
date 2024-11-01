@@ -23,8 +23,8 @@ const ToolBar = () => {
   };
 
   return (
-    <div className="mt-8 ml-auto mr-auto w-9/10 md:w-9/10 max-w-3xl transition-all ease-in-out duration-200">
-      <div className="flex flex-row space-x-6 justify-between md:justify-start font-sans text-sm text-slate-500">
+    <div className="mt-8 ml-auto mr-auto w-9/10 md:w-9/10 max-w-3xl transition-all ease-in-out duration-200 overflow-auto">
+      <div className="flex flex-wrap gap-4 justify-start font-sans text-sm text-slate-500">
         <motion.button
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -37,6 +37,19 @@ const ToolBar = () => {
           onClick={() => handleClick("About")}
         >
           About
+        </motion.button>
+        <motion.button
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          whileHover={{ scale: 0.95 }}
+          className={`p-1 px-2 rounded-md ${
+            selectedStatus === "Projects"
+              ? "bg-black text-white"
+              : "hover:bg-gray-200 hover:text-slate-600"
+          }`}
+          onClick={() => handleClick("Projects")}
+        >
+          Projects
         </motion.button>
         <motion.button
           initial={{ opacity: 0 }}

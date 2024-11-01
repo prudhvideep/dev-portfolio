@@ -7,6 +7,7 @@ import ToolBar from "./components/ToolBar";
 import Contact from "./pages/Contact";
 import Export from "./pages/TechStack";
 import Footer from "./components/Footer";
+import Projects from "./pages/Projects";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -41,7 +42,7 @@ function AnimatedRoutes() {
           }
         />
         <Route
-          path="/TechStack"
+          path="/Projects"
           element={
             <motion.div
               initial={{ opacity: 0, y: 50 }}
@@ -49,7 +50,7 @@ function AnimatedRoutes() {
               exit={{ opacity: 0, y: 50 }}
               transition={{ duration: 0.1 }}
             >
-              <Export />
+              <Projects />
             </motion.div>
           }
         />
