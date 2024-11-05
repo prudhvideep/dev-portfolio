@@ -13,7 +13,7 @@ const ToolBar = () => {
     setSelectedStatus(pathname);
   }, [location]);
 
-  const handleClick = (status) => {
+  const handleClick = (status : string) => {
     setSelectedStatus(status);
     if (status === "About") {
       navigate("/");

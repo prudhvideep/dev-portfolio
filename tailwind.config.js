@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: ["./src/**/*.{html,js,jsx,tsx}"],
   theme: {
     extend: {
@@ -8,7 +8,7 @@ module.exports = {
         "8/10": "80%",
       },
       transitionTimingFunction: {
-        'bounce-pronounced': 'cubic-bezier(0.25, 0.1, 0.5, 3)',
+        "bounce-pronounced": "cubic-bezier(0.25, 0.1, 0.5, 3)",
       },
     },
   },

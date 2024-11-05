@@ -5,7 +5,6 @@ import Blogs from "./pages/Blogs";
 import Header from "./components/Header";
 import ToolBar from "./components/ToolBar";
 import Contact from "./pages/Contact";
-import Export from "./pages/TechStack";
 import Footer from "./components/Footer";
 import Projects from "./pages/Projects";
 

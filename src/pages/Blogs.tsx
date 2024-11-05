@@ -16,7 +16,7 @@ const Blogs = () => {
               >
               <div
                 className="flex flex-col space-y-1 rounded-lg bg-gray-100 hover:bg-white py-3 pl-3 border border-gray-200"
-                tabIndex="0"
+                tabIndex={0}
               >
                 <div className="w-full flex flex-col">
                   <div className="flex items-center gap-2">

@@ -86,7 +86,8 @@ const About = () => {
                   fnd
                 </div>
                 <div className="max-w-xs text-sm font-normal text-gray-500">
-                A CLI tool for fast local and SSH file searches, supporting regex and glob patterns.
+                  A CLI tool for fast local and SSH file searches, supporting
+                  regex and glob patterns.
                 </div>
                 <div className="hidden md:flex mt-2 flex-row space-x-2 items-center">
                   <FaGolang className="text-3xl" />
