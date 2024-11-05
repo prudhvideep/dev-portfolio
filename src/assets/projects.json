@@ -15,7 +15,7 @@
   {
     "Title": "Dev Portfolio",
     "Desciption": "Highlight your work and acheivements using this minimal template.",
-    "Stack": ["JavaScript","React","Tailwind","Framer Motion"],
+    "Stack": ["TypeScript","JavaScript","React","Tailwind","Framer Motion"],
     "Link" : "https://github.com/prudhvideep/dev-portfolio"
   }
 ]

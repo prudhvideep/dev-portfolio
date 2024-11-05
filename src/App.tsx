@@ -28,7 +28,7 @@ function AnimatedRoutes() {
           }
         />
         <Route
-          path="/Blogs"
+          path="/Blog"
           element={
             <motion.div
               initial={{ opacity: 0, y: 50 }}

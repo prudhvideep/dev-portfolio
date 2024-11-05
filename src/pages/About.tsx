@@ -5,23 +5,16 @@ import {
   FaPython,
   FaExternalLinkAlt,
   FaGithub,
-  FaRobot,
 } from "react-icons/fa";
 import { FaAws, FaReact, FaTerminal, FaGolang } from "react-icons/fa6";
 import { FiFramer } from "react-icons/fi";
 import {
   SiTerraform,
   SiJavascript,
+  SiTypescript,
   SiTailwindcss,
-  SiSpringboot,
-  SiAmazondynamodb,
-  SiAwslambda,
 } from "react-icons/si";
-import { MdTimeline } from "react-icons/md";
-import { IoLogoFirebase } from "react-icons/io5";
-import { RiJavaLine } from "react-icons/ri";
 import { motion } from "framer-motion";
-import { BiLogoPostgresql } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
 
 const About = () => {
@@ -162,7 +155,7 @@ const About = () => {
               </div>
             </motion.div>
           </div>
-          <div className="mt-5 p-2 group">
+          {/* <div className="mt-5 p-2 group">
             <motion.div
               className="p-2 hover:cursor-pointer"
               whileHover={{
@@ -265,7 +258,7 @@ const About = () => {
                 </div>
               </div>
             </motion.div>
-          </div>
+          </div> */}
           <div className="mt-5 p-2 group">
             <motion.div
               className="p-2 hover:cursor-pointer"
@@ -280,6 +273,7 @@ const About = () => {
                 template.
               </div>
               <div className="hidden md:flex mt-4 flex-row space-x-2 items-center">
+                <SiTypescript />
                 <SiJavascript />
                 <FaReact />
                 <FiFramer />
@@ -305,7 +299,7 @@ const About = () => {
           onClick={() => navigate("/Projects")}
           className="mt-4 hover:underline text-sm hover:cursor-pointer"
         >
-          Read More
+          View More
         </div>
       </div>
       <div className="mt-10">
