@@ -37,7 +37,7 @@ const About = () => {
                 Project Leader
               </div>
             </div>
-            <div className="mb-4 text-sm font-normal text-gray-500">
+            <div className=" text-sm font-normal text-gray-500">
               Oracle Cloud
             </div>
           </li>
@@ -297,7 +297,7 @@ const About = () => {
         </div>
         <div
           onClick={() => navigate("/Projects")}
-          className="hover:underline text-sm hover:cursor-pointer"
+          className="mt-4 hover:underline text-sm hover:cursor-pointer"
         >
           View More
         </div>

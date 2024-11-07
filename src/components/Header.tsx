@@ -1,7 +1,7 @@
 import github from "../media/github.svg";
 import x from "../media/x.svg";
 import linkedin from "../media/linkedin.svg";
-import profilePic from "../media/profile.jpg";
+import profilePic from "../media/folio_img.jpg";
 
 
 const Header = () => {
