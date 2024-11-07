@@ -27,8 +27,8 @@ const About = () => {
         his "Meditations," pondering on duty, virtue, and the transience of
         life.
       </p>
-      <div className="mt-16">
-        <h1 className="font-medium text-gray-900 mb-4 text-lg">Experience</h1>
+      <div className="mt-10">
+        <h1 className="font-medium text-gray-900 mb-4 text-xl">Experience</h1>
         <ol className="relative border-s border-gray-200">
           <li className="mb-10 ms-4">
             <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border "></div>
@@ -46,7 +46,7 @@ const About = () => {
             <div className="text-md font-medium text-gray-900">
               Senior Application Developer
             </div>
-            <div className="mb-4 text-sm font-normal text-gray-500">
+            <div className="text-sm font-normal text-gray-500">
               Oracle Cloud
             </div>
           </li>
@@ -60,7 +60,7 @@ const About = () => {
         </div>
       </div>
       <div className="mt-10">
-        <h1 className="font-medium text-gray-900 mb-4 text-lg">
+        <h1 className="font-medium text-gray-900 mb-4 text-xl">
           Projects / Oss
         </h1>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-x-10 gap-y-5">
@@ -297,13 +297,13 @@ const About = () => {
         </div>
         <div
           onClick={() => navigate("/Projects")}
-          className="mt-4 hover:underline text-sm hover:cursor-pointer"
+          className="hover:underline text-sm hover:cursor-pointer"
         >
           View More
         </div>
       </div>
       <div className="mt-10">
-        <h1 className="font-medium text-gray-900 mb-4 text-lg">Latest Blogs</h1>
+        <h1 className="font-medium text-gray-900 mb-4 text-xl">Latest Blogs</h1>
         <a
           href="https://medium.com/p/e28f71a6b8ab"
           target="_blank"
@@ -312,14 +312,14 @@ const About = () => {
           <div className="w-full flex flex-col justify-center">
             <div className="flex items-center gap-2">
               <p className="text-gray-500 text-xs">2024-04-26</p>
-              <p className="text-gray-900 text-lg font-medium tracking-tight">
+              <p className="text-gray-700 text-lg font-normal tracking-tight">
                 Deploying Open Ai API on AWS lambda
               </p>
             </div>
           </div>
         </a>
         <div
-          onClick={() => navigate("/Blogs")}
+          onClick={() => navigate("/Blog")}
           className="hover:underline text-sm hover:cursor-pointer"
           aria-label="Read more blogs"
         >
