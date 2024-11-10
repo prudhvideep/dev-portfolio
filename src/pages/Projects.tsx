@@ -42,7 +42,7 @@ const Projects = () => {
   const isTagHighlighted = (tag: string) => activeFilter === tag;
 
   return (
-    <div className="mt-6 ml-auto mr-auto w-9/10 md:w-9/10 max-w-3xl opacity:1 transform:none">
+    <div className="mt-6 ml-auto mr-auto w-8/10 md:w-9/10 max-w-3xl opacity:1 transform:none">
       <p className="font-medium text-slate-700">
         Learn to build, build to learn
       </p>

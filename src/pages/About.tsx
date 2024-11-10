@@ -21,7 +21,7 @@ const About = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="mt-10 ml-auto mr-auto w-9/10 md:w-9/10 max-w-3xl opacity:1 transform:none">
+    <div className="mt-10 ml-auto mr-auto w-8/10 md:w-9/10 max-w-3xl opacity:1 transform:none">
       <p className="text-[17px] font-serif text-gray-500">
         A Roman emperor and Stoic philosopher who wrote reflective thoughts in
         his "Meditations," pondering on duty, virtue, and the transience of
@@ -303,7 +303,7 @@ const About = () => {
         </div>
       </div>
       <div className="mt-10">
-        <h1 className="font-medium text-gray-900 mb-4 text-xl">Latest Blogs</h1>
+        <h1 className="font-medium text-gray-900 mb-4 text-xl">Latest Posts</h1>
         <a
           href="https://medium.com/p/e28f71a6b8ab"
           target="_blank"

@@ -28,6 +28,7 @@ const ToolBar = () => {
         <motion.button
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
+          dragElastic
           whileHover={{ scale: 0.95 }}
           className={`p-1 px-2 rounded-md ${
             selectedStatus === "About"
