@@ -18,6 +18,7 @@ const Blogs = () => {
               whileTap={{ scale: 0.95 }}
               onClick={() => navigate("/Blog/LearnDistSys")}
               target="_blank"
+              className="hover:cursor-pointer"
             >
               <div
                 className="flex flex-col space-y-1 rounded-lg bg-gray-100 hover:bg-white py-3 pl-3 border border-gray-200"

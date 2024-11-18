@@ -7,10 +7,19 @@ const ToolBar = () => {
   const location = useLocation();
 
   const [selectedStatus, setSelectedStatus] = useState("");
+  const [displayToolbar, setDisplayToolbar] = useState<boolean>(true);
 
   useEffect(() => {
     let pathname = location.pathname.split("/")[1] || "About";
     setSelectedStatus(pathname);
+
+    let pathArr = location.pathname.split("/");
+    
+    if(pathArr[1] === "Blog" && pathArr.length > 2){
+      setDisplayToolbar(false)
+    }else{
+      setDisplayToolbar(true)
+    }
   }, [location]);
 
   const handleClick = (status : string) => {
@@ -23,7 +32,7 @@ const ToolBar = () => {
   };
 
   return (
-    <div className="mt-8 ml-auto mr-auto w-9/10 md:w-9/10 max-w-3xl transition-all ease-in-out duration-200 overflow-auto">
+    <div className={`${displayToolbar ? "block" : "hidden"} mt-8 ml-auto mr-auto w-9/10 md:w-9/10 max-w-3xl transition-all ease-in-out duration-200 overflow-auto`}>
       <div className="flex flex-wrap gap-4 justify-start font-sans text-sm text-slate-500">
         <motion.button
           initial={{ opacity: 0 }}
