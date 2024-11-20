@@ -79,13 +79,13 @@ const ToolBar = () => {
           animate={{ opacity: 1 }}
           whileHover={{ scale: 0.95 }}
           className={`p-1 px-2 rounded-md ${
-            selectedStatus === "Experience"
+            selectedStatus === "Resume"
               ? "bg-black text-white"
               : "hover:bg-gray-200 hover:text-slate-600"
           }`}
-          onClick={() => handleClick("Experience")}
+          onClick={() => handleClick("Resume")}
         >
-          Experience
+          Resume
         </motion.button>
         <motion.button
           initial={{ opacity: 0 }}

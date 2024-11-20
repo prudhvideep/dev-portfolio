@@ -30,16 +30,16 @@ const LearnDistSys = () => {
               Oct 10, 2024
             </p>
             <p className="mt-2 font-sans">
-              My approach to learning things related to computers is to have
-              short feedback loops. For example, my process for learning File IO
-              in Go would involve coming up with a use case that requires the
-              use of file operations, such as finding the word count of a file.
-              Then, I would review the documentation and write code to realize
-              the use case. The purpose would drive my learning, and the
-              feedback from executing the code would reinforce my learning. Now,
-              I have mastered file operations. Is this the end? No. Next, I
-              would widen the use case scope to encompass more concepts and keep
-              the feedback loop going.
+              My approach to learning things in computer science involves
+              building short feedback loops. For example, my process for
+              learning File IO in Go would include coming up with a use case
+              that requires the use of file operations, such as finding the word
+              count of a file. Then, I would review the documentation and write
+              code to realize this use case. The purpose would drive my
+              learning, and the feedback from executing the code would reinforce
+              my understanding. Say I mastered file operations. Is this the end?
+              No. Next, I would widen the problem scope to encompass more
+              concepts and keep the feedback loop going.
             </p>
             <p className="mt-2 font-sans">
               This process is not different from how we learn a new piece of

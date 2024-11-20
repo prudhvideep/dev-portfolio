@@ -7,7 +7,7 @@ import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import Projects from "./pages/Projects";
 import BlogRoutes from "./routes/BlogRoutes";
-import Experience from "./pages/Experience";
+import Experience from "./pages/Resume";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -55,7 +55,7 @@ function AnimatedRoutes() {
           }
         />
         <Route
-          path="/Experience"
+          path="/Resume"
           element={
             <motion.div
               initial={{ opacity: 0, y: 50 }}

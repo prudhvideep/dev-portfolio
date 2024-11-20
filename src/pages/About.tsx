@@ -52,7 +52,7 @@ const About = () => {
           </li>
         </ol>
         <div
-          onClick={() => navigate("/Experience")}
+          onClick={() => navigate("/Resume")}
           className="hover:underline text-sm hover:cursor-pointer"
           aria-label="Read more blogs"
         >
@@ -64,7 +64,7 @@ const About = () => {
           Projects / Oss
         </h1>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-x-10 gap-y-5">
-          <div className="mt-5 p-2 group">
+          <div className="mt-2 p-2 group">
             <motion.div
               className="p-2 hover:cursor-pointer"
               whileHover={{
@@ -304,6 +304,19 @@ const About = () => {
       </div>
       <div className="mt-10">
         <h1 className="font-medium text-gray-900 mb-4 text-xl">Latest Posts</h1>
+        <a
+          href="/Blog/LearnDistSys"
+          className="flex flex-col space-y-1 mb-4 hover:bg-gray-100 hover:rounded-md p-2 hover:underline hover:cursor-pointer"
+        >
+          <div className="w-full flex flex-col justify-center">
+            <div className="flex items-center gap-2">
+              <p className="text-gray-500 text-xs">2024-10-10</p>
+              <p className="text-gray-700 text-lg font-normal tracking-tight">
+                An approach to re-learn distributed systems.
+              </p>
+            </div>
+          </div>
+        </a>
         <a
           href="https://medium.com/p/e28f71a6b8ab"
           target="_blank"
