@@ -6,6 +6,13 @@
     "Link" : "https://github.com/prudhvideep/fnd"
   },
   {
+    "Title": "Snippets",
+    "Desciption": "A Zettelkasten-inspired personal knowledge base featuring Notion-like rich text editing and native code execution support powered by WASM.",
+    "Stack": ["TypeScript","JavaScript","React","Zustand","TailwindCss","PostgreSql", "Wasm","Frontend","Backend"],
+    "Link" : "https://github.com/prudhvideep/Snippets",
+    "Demo" : "https://snippets-3fo.pages.dev/"
+  },
+  {
     "Title": "Video Face Recognition",
     "Desciption": "An app for detecting faces in a video, built using amazon web services.",
     "Stack": ["Python","Docker","Terraform","aws","JavaScript","React","TailwindCss","Frontend","Backend"],

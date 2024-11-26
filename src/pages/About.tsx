@@ -13,9 +13,11 @@ import {
   SiJavascript,
   SiTypescript,
   SiTailwindcss,
+  SiWebassembly,
 } from "react-icons/si";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import { PiGraph } from "react-icons/pi";
 
 const About = () => {
   const navigate = useNavigate();
@@ -127,6 +129,57 @@ const About = () => {
                   <SiJavascript />
                   <FaReact />
                   <SiTailwindcss />
+                </div>
+                <div className="mt-4 flex flex-row space-x-4 justify-start">
+                  <motion.a
+                    href="https://main.d2g4ycz7ogc8gz.amplifyapp.com/"
+                    target="_blank"
+                    className="flex items-center text-sm text-gray-500 hover:font-semibold hover:text-gray-900 transition-colors"
+                    whileHover={{
+                      scale: 1.05,
+                    }}
+                  >
+                    <FaExternalLinkAlt className="mr-1" />
+                    <span className="underline hover:no-underline">Demo</span>
+                  </motion.a>
+                  <motion.a
+                    href="https://github.com/prudhvideep/Video-Face-Recognition"
+                    target="_blank"
+                    className="flex items-center text-sm text-gray-500 hover:font-semibold hover:text-gray-900 transition-colors"
+                    whileHover={{
+                      scale: 1.05,
+                    }}
+                  >
+                    <FaGithub className="mr-1" />
+                    <span className="underline hover:no-underline">Source</span>
+                  </motion.a>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+          <div className="mt-5 p-2 group">
+            <motion.div
+              className="p-2 hover:cursor-pointer"
+              whileHover={{
+                scale: 1.1,
+                textShadow: "0px 0px 8px rgb(255,255,255)",
+                boxShadow: "0px 0px 8px rgb(255,255,255)",
+              }}
+            >
+              <div>
+                <PiGraph className="w-8 h-8 rounded-lg text-white bg-black p-2 mb-3" />
+                <div className="text-sm mb-1 font-medium text-gray-900">
+                  Snippets
+                </div>
+                <div className="max-w-xs text-sm font-normal text-gray-500">
+                  A Zettelkasten-inspired personal knowledge base with
+                  Notion-like rich text editing.
+                </div>
+                <div className="hidden md:flex mt-4 flex-row space-x-2 items-center">
+                  <SiTypescript />
+                  <FaReact />
+                  <SiTailwindcss />
+                  <SiWebassembly />
                 </div>
                 <div className="mt-4 flex flex-row space-x-4 justify-start">
                   <motion.a
