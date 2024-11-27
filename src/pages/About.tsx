@@ -25,9 +25,14 @@ const About = () => {
   return (
     <div className="mt-10 ml-auto mr-auto w-8/10 md:w-9/10 max-w-3xl opacity:1 transform:none">
       <p className="text-[17px] font-serif text-gray-500">
-        A Roman emperor and Stoic philosopher who wrote reflective thoughts in
-        his "Meditations," pondering on duty, virtue, and the transience of
-        life.
+        I hope to develop better interactive software for people to cultivate
+        and share ideas, and to meaningfully express what brings them joy.
+        <br></br>
+        <br></br>
+        Towards that goal, I am a generalist and care deeply about systems,
+        which form the fundamental building blocks of our applications; and
+        interaction design, how we use and live with computers that are all
+        around us
       </p>
       <div className="mt-10">
         <h1 className="font-medium text-gray-900 mb-4 text-xl">Experience</h1>
