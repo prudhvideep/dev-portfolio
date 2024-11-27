@@ -1,6 +1,7 @@
+import scannerGif from "../media/scanner.gif";
+import resume from "../assets/Prudhvi_Mutyala_Resume.pdf";
 
 export default function Experience() {
-
   return (
     <div className="mt-10 ml-auto mr-auto w-8/10 md:w-9/10 max-w-3xl opacity:1 transform:none">
       <div className="mt-10">
@@ -78,7 +79,9 @@ export default function Experience() {
             , Fall 2016
           </li>
         </ul>
-        <h4 className="font-[500] text-md mt-4 mb-1">Graduate-level Techincal Coursework:</h4>
+        <h4 className="font-[500] text-md mt-4 mb-1">
+          Graduate-level Techincal Coursework:
+        </h4>
         <ul className="list-disc ml-8">
           <li className="list-item text-gray-600">
             Distributed Database Systems (CSE 512)
@@ -86,12 +89,8 @@ export default function Experience() {
           <li className="list-item text-gray-600">
             Distributed Software Development (CSE 445 / CSE 598)
           </li>
-          <li className="list-item text-gray-600">
-            Cloud Computing (CSE 575)
-          </li>
-          <li className="list-item text-gray-600">
-            Data Mining (CSE 572)
-          </li>
+          <li className="list-item text-gray-600">Cloud Computing (CSE 575)</li>
+          <li className="list-item text-gray-600">Data Mining (CSE 572)</li>
           <li className="list-item text-gray-600">
             Statistical Machine Learning (CSE 575)
           </li>
@@ -101,6 +100,27 @@ export default function Experience() {
         <h1 className="font-[450] text-gray-900 mb-4 text-xl">
           Professional Experience
         </h1>
+      </div>
+      <div className="mt-16 p-6 w-full border border-gray-300 bg-white rounded-lg shadow-lg">
+        <div className="flex flex-row items-center justify-center space-x-6">
+          <img
+            className="w-20 h-20 rounded-full"
+            alt="Scanner Gif"
+            src={scannerGif}
+          />
+          <div className="flex flex-col">
+            <h2 className="text-gray-700 font-serif font-semibold text-lg mb-2">
+              Need a copy of my resume?
+            </h2>
+            <a
+              href={resume}
+              target="_blank"
+              className="underline text-gray-700 hover:text-gray-900 font-serif"
+            >
+              Click here to download it!
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -1,5 +1,4 @@
-import scannerGif from "../media/scanner.gif";
-import resume from "../assets/Prudhvi_Mutyala_Resume.pdf";
+
 
 const Contact = () => {
   return (
@@ -31,22 +30,6 @@ const Contact = () => {
       <p className="text-[17px] font-serif text-gray-500 mb-4">
         <span className="font-bold">Time Zone</span>: MST (Mountain Standard Time)
       </p>
-
-      <div className="mt-16 p-6 w-full border border-gray-300 bg-white rounded-lg shadow-lg">
-        <div className="flex flex-row items-center justify-center space-x-6">
-          <img className="w-20 h-20 rounded-full" alt="Scanner Gif" src={scannerGif} />
-          <div className="flex flex-col">
-            <h2 className="text-gray-700 font-serif font-semibold text-lg mb-2">Need a copy of my resume?</h2>
-            <a
-              href={resume}
-              target="_blank"
-              className="underline text-gray-700 hover:text-gray-900 font-serif"
-            >
-              Click here to download it!
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
