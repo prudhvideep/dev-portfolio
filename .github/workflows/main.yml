@@ -1,0 +1,16 @@
+name: Sync to Private Repo
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source repo
+        uses: actions/checkout@v3
+      - name: Push to private repo
+        run: |
+          git remote add private-origin git@github.com:prudhvideep/prudhvi.git
+          git push private-origin main
