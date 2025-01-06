@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Source Serif 4 Variable", ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+}
+
+p {
+  font-family: Inter Variable, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  line-height: 1.375;
+}
+
+h1 {
+  font-family: Roboto Flex Variable,system-ui,-apple-system,sans-serif;
+  font-variation-settings: "wdth" 46, "wght" 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: Roboto Flex Variable,system-ui,-apple-system,sans-serif;
+  font-size: 16px;
+  font-variation-settings: "wdth" 46, "wght" 700;
+}
+
+
+h3 {
+  font-family: Roboto Flex Variable,system-ui,-apple-system,sans-serif;
+  font-weight: 500;
+  font-size: 16px !important;
+  font-variation-settings: "wdth" 46, "wght" 700;
+}
+
+a {
+  font-size: 0.875rem !important;
+  line-height: 1.25rem;
+}

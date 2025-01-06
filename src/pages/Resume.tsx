@@ -3,7 +3,7 @@ import resume from "../assets/Prudhvi_Mutyala_Resume.pdf";
 
 export default function Experience() {
   return (
-    <div className="mt-10 ml-auto mr-auto w-8/10 md:w-9/10 max-w-3xl opacity:1 transform:none">
+    <div className="mt-10 ml-auto mr-auto w-9/10 md:w-9/10 max-w-3xl opacity:1 transform:none">
       <div className="mt-10">
         <h1 className="font-[500] text-gray-900 mb-4 text-xl text-opacity-100">
           Education
@@ -18,7 +18,7 @@ export default function Experience() {
                 <p className="text-gray-600">
                   <span className="text-sm italic font-normal">2023</span>
                   <span> - </span>
-                  <span className="italic text-sm font-normal">May 2025 <span className="italian">(Expected)</span></span>
+                  <span className="italic text-sm font-normal">May 2025 <span className="hidden md:block italian">(Expected)</span></span>
                 </p>
               </div>
             </div>

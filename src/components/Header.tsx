@@ -1,15 +1,15 @@
 import github from "../media/github.svg";
 import x from "../media/x.svg";
 import linkedin from "../media/linkedin.svg";
-import profilePic from "../media/folio_img.jpg";
+import profilePic from "../media/profile.jpg";
 
 
 const Header = () => {
   return (
-    <div className="border-b ml-auto mr-auto w-8/10 md:w-9/10 max-w-3xl">
+    <div className="border-b ml-auto mr-auto w-9/10 md:w-9/10 max-w-3xl">
       <div className="mt-8 ">
         <div
-          className="mb-4 rounded-full bg-gray-100 w-14 h-14 overflow-hidden"
+          className="mb-4 rounded-full bg-gray-100 w-24 h-24"
         >
           <img
             src={profilePic}

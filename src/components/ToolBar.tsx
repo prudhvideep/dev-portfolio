@@ -32,8 +32,8 @@ const ToolBar = () => {
   };
 
   return (
-    <div className={`${displayToolbar ? "block" : "hidden"} mt-8 ml-auto mr-auto w-9/10 md:w-9/10 max-w-3xl transition-all ease-in-out duration-200 overflow-auto`}>
-      <div className="flex flex-wrap gap-4 justify-start font-sans text-sm text-slate-500">
+    <div className={`${displayToolbar ? "block" : "hidden"} mt-8 ml-auto mr-auto w-9/10 md:w-9/10 max-w-3xl transition-all ease-in-out duration-200 overflow-x-auto`}>
+      <div className="flex  gap-4 justify-start font-sans text-sm text-slate-500">
         <motion.button
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

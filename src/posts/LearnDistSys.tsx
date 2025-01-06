@@ -7,7 +7,7 @@ const LearnDistSys = () => {
 
   return (
     <div
-      className="mt-10 ml-auto mr-auto w-8/10 md:w-9/10 max-w-3xl"
+      className="mt-10 ml-auto mr-auto w-9/10 md:w-9/10 max-w-3xl"
       style={{ opacity: 1, transform: "none" }}
     >
       <div>

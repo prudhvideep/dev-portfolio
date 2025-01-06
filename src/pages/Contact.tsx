@@ -2,7 +2,7 @@
 
 const Contact = () => {
   return (
-    <div className="mt-10 ml-auto mr-auto w-8/10 md:w-9/10 max-w-3xl opacity-100 transform-none">
+    <div className="mt-10 ml-auto mr-auto w-9/10 md:w-9/10 max-w-3xl opacity-100 transform-none">
       <p className="text-[17px] font-serif text-gray-500 mb-4">
         If you have any opportunities, feel free to reach out - I would love to
         chat! You can reach me via my personal email, or drop a DM on{" "}
