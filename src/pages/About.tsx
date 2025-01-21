@@ -6,8 +6,14 @@ import {
   FaExternalLinkAlt,
   FaGithub,
 } from "react-icons/fa";
-import { FaAws, FaReact, FaTerminal, FaGolang } from "react-icons/fa6";
-import { FiFramer } from "react-icons/fi";
+import {
+  FaAws,
+  FaReact,
+  FaTerminal,
+  FaGolang,
+  FaFeatherPointed,
+} from "react-icons/fa6";
+import { FiFramer, FiFileText } from "react-icons/fi";
 import {
   SiTerraform,
   SiJavascript,
@@ -258,6 +264,34 @@ const About = () => {
               <div className="mt-4 flex flex-row space-x-4 justify-start">
                 <motion.a
                   href="https://github.com/prudhvideep/dev-portfolio"
+                  target="_blank"
+                  className="flex items-center text-sm text-gray-500 hover:font-semibold hover:text-gray-900 transition-colors"
+                  whileHover={{
+                    scale: 1.05,
+                  }}
+                >
+                  <FaGithub className="mr-1" />
+                  <span className="underline hover:no-underline">Source</span>
+                </motion.a>
+              </div>
+            </motion.div>
+          </div>
+          <div className="mt-5 mb-4 p-2 group">
+            <motion.div
+              className="p-2 hover:cursor-pointer"
+              whileHover={{ scale: 1.1 }}
+            >
+              <FaFeatherPointed className="w-8 h-8 rounded-lg text-white bg-black p-2 mb-3" />
+              <h3 className="text-sm mb-1 font-medium text-gray-900">Quill</h3>
+              <p className="max-w-xs text-sm font-normal text-gray-600">
+                A minimal, dependency-free text editor written in C.
+              </p>
+              <div className="hidden md:flex mt-4 flex-row space-x-2 items-center">
+
+              </div>
+              <div className="mt-4 flex flex-row space-x-4 justify-start">
+                <motion.a
+                  href="https://github.com/prudhvideep/quill"
                   target="_blank"
                   className="flex items-center text-sm text-gray-500 hover:font-semibold hover:text-gray-900 transition-colors"
                   whileHover={{

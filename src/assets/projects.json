@@ -24,5 +24,11 @@
     "Desciption": "Highlight your work and acheivements using this minimal template.",
     "Stack": ["TypeScript","JavaScript","React","Tailwind","Framer Motion"],
     "Link" : "https://github.com/prudhvideep/dev-portfolio"
+  },
+  {
+    "Title": "quill",
+    "Desciption": "A minimal, dependency-free text editor written in C. Quill provides essential features such as search and syntax highlighting.",
+    "Stack": ["C"],
+    "Link" : "https://github.com/prudhvideep/quill"
   }
 ]
