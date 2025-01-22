@@ -13,7 +13,8 @@ import {
   FaGolang,
   FaFeatherPointed,
 } from "react-icons/fa6";
-import { FiFramer, FiFileText } from "react-icons/fi";
+import { FiFramer } from "react-icons/fi";
+import { BiLogoPostgresql } from "react-icons/bi";
 import {
   SiTerraform,
   SiJavascript,
@@ -50,19 +51,38 @@ const About = () => {
             href={resume}
             className="font-medium underline mr-1"
           >
-            resume
+            Resume
           </a>
         </span>
         .
       </p>
-      <p className="mt-4 text-gray-600">
+      <p className="mt-2 text-gray-600">
         I'm a full stack developer, hoping to develop interactive software that
         can help people share ideas and express things that can bring them joy.
-        <br></br>
-        <br></br>
+      </p>
+      <p className="mt-2 text-gray-600">
         To acheive this goal, I work with low level system abstractions that
         form the fundamental building blocks in all the application and
         interaction design.
+      </p>
+      <p className="mt-2 text-gray-600">
+        I hate writing bloated software, my coding philosphy is hugely
+        influenced from{" "}
+        <span className="underline font-medium">
+          <a
+            href="https://cscie2x.dce.harvard.edu/hw/ch01s06.html"
+            target="_blank"
+          >
+            The Unix Philosphy
+          </a>
+        </span> and <span className="underline font-medium">
+          <a
+            href="https://matklad.github.io/2022/10/06/hard-mode-rust.html"
+            target="_blank"
+          >
+            Hard mode Rust
+          </a>
+        </span>. These days my coding stack mostly involves <span className="underline">Go</span>, <span className="underline">Typescript</span> and <span className="underline">Python</span>.
       </p>
       <div className="mt-10">
         <h1 className="font-medium text-gray-900 mb-4 text-xl">Experience</h1>
@@ -213,6 +233,7 @@ const About = () => {
                   <FaReact />
                   <SiTailwindcss />
                   <SiWebassembly />
+                  <BiLogoPostgresql />
                 </div>
                 <div className="mt-4 flex flex-row space-x-2 md:space-x-4 justify-start">
                   <motion.a
@@ -286,9 +307,7 @@ const About = () => {
               <p className="max-w-xs text-sm font-normal text-gray-600">
                 A minimal, dependency-free text editor written in C.
               </p>
-              <div className="hidden md:flex mt-4 flex-row space-x-2 items-center">
-
-              </div>
+              <div className="hidden md:flex mt-4 flex-row space-x-2 items-center"></div>
               <div className="mt-4 flex flex-row space-x-4 justify-start">
                 <motion.a
                   href="https://github.com/prudhvideep/quill"
