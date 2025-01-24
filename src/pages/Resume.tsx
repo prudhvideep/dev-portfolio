@@ -216,9 +216,9 @@ export default function Experience() {
           </div>
         </div>
         <ul className="mt-2 list-disc ml-8">
-          <li className="list-item text-gray-600 text-md">
+          {/* <li className="list-item text-gray-600 text-md">
             
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className="mt-16 p-6 w-full border border-gray-300 bg-white rounded-lg shadow-lg">
