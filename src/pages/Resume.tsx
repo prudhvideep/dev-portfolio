@@ -18,7 +18,10 @@ export default function Experience() {
                 <p className="text-gray-600">
                   <span className="text-sm italic font-normal">2023</span>
                   <span> - </span>
-                  <span className="italic text-sm font-normal">May 2025 <span className="hidden md:block italian">(Expected)</span></span>
+                  <span className="italic text-sm font-normal">
+                    May 2025{" "}
+                    <span className="hidden md:block italian">(Expected)</span>
+                  </span>
                 </p>
               </div>
             </div>
@@ -189,6 +192,32 @@ export default function Experience() {
           <li className="list-item text-gray-600">
             Completely automated the inventory platforms’ user experience
             testing process by integrating Selenium webdriver.
+          </li>
+        </ul>
+        <div className="mt-4 flex flex-row items-center justify-between">
+          <div className="text-lg font-normal text-gray-900">
+            Research Assistant,{" "}
+            <span>
+              <a
+                className="underline font-medium"
+                href="https://spcrc.iiit.ac.in/"
+                target="_blank"
+              >
+                Signal Processing and Communication Research Center
+              </a>
+            </span>
+          </div>
+          <div>
+            <p className="text-gray-600">
+              <span className="text-sm italic font-normal">Aug 2016</span>
+              <span> - </span>
+              <span className="italic text-sm font-normal">June 2018</span>
+            </p>
+          </div>
+        </div>
+        <ul className="mt-2 list-disc ml-8">
+          <li className="list-item text-gray-600 text-md">
+            
           </li>
         </ul>
       </div>
