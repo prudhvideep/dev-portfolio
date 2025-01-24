@@ -117,10 +117,9 @@ export default function Experience() {
         </div>
         <ul className="mt-2 list-disc ml-8">
           <li className="list-item text-gray-600 text-md">
-            Led development of a scalable Go-based customer engagement platform
-            for Oracle Engagement Cloud, overcoming distributed system
-            challenges and achieving 99.9% uptime, 30% reduced latency, and
-            enhanced response personalization.
+            Led the re-write of the omni-channel communication module for user
+            engagement using the actor paradigm in Go, enabling high concurrency
+            and improving p50 latency by 10% and p90 latency by 20%
           </li>
           <li className="list-item text-gray-600">
             Achieved seamless API migration with zero downtime by validating the
@@ -158,8 +157,10 @@ export default function Experience() {
             more fault-tolerant microservices architecture.
           </li>
           <li className="list-item text-gray-600">
-            Enriched system metrics by integrating the platforms with telemetry,
-            facilitating logging by correlating APIs with vector contexts
+            Built high-level, reusable eBPF tooling with simple Apis for network
+            diagnostics, tracing, and panic event decoding, optimizing
+            observability and simplifying debugging in Kubernetes-driven
+            microservices.
           </li>
         </ul>
         <div className="mt-4 flex flex-row items-center justify-between">
@@ -176,22 +177,20 @@ export default function Experience() {
         </div>
         <ul className="mt-2 list-disc ml-8">
           <li className="list-item text-gray-600 text-md">
-            Developed cloud-native applications of the Oracle SCM platform that
-            are scalable, distributed, and highly available, using Java, React,
-            Oracle DB, Pl/Sql, Oracle Lambda, and OpenShift.
+            Owned the end-to-end development of Cycle Count RESTful services
+            using SpringBoot, from writing code and reviewing external feature
+            requests to managing release documentation and approvals.
           </li>
           <li className="list-item text-gray-600">
-            Introduced Redux for centralized state management, reducing UI
-            latency by 19% and ensuring consistent real-time updates across
-            diverse UI components.
+            Migrated legacy JSF UIs to React, reducing build size by 60% by
+            hosting static assets on a CDN and using Webpack bundle splitting to
+            optimize caching and load times.
           </li>
           <li className="list-item text-gray-600">
-            Built REST APIs from scratch, architecting scalable and
-            fault-tolerant solutions from the ground up using Spring Boot.
-          </li>
-          <li className="list-item text-gray-600">
-            Completely automated the inventory platforms’ user experience
-            testing process by integrating Selenium webdriver.
+            Identified and addressed gaps in automation and manual testing for
+            the inventory module, enhancing coverage with JUnit for middleware
+            and Selenium for automation, achieving 100% coverage for P1 flows
+            and 90% for P2 and P3 flows.
           </li>
         </ul>
         <div className="mt-4 flex flex-row items-center justify-between">

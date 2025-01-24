@@ -61,7 +61,7 @@ const About = () => {
         can help people share ideas and express things that can bring them joy.
       </p>
       <p className="mt-2 text-gray-600">
-        To acheive this goal, I work with low level system abstractions that
+        To acheive this goal, I like to work with low level systems that
         form the fundamental building blocks in all the application and
         interaction design.
       </p>

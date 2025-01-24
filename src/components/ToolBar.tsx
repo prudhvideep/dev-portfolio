@@ -10,10 +10,10 @@ const ToolBar = () => {
   const [displayToolbar, setDisplayToolbar] = useState<boolean>(true);
 
   useEffect(() => {
-    let pathname = location.pathname.split("/")[1] || "About";
+    const pathname = location.pathname.split("/")[1] || "About";
     setSelectedStatus(pathname);
 
-    let pathArr = location.pathname.split("/");
+    const pathArr = location.pathname.split("/");
     
     if(pathArr[1] === "Blog" && pathArr.length > 2){
       setDisplayToolbar(false)
