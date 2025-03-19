@@ -63,14 +63,14 @@ const About = () => {
         composing solutions from the ground up using first principles.
       </p>
       <p className="mt-2 text-gray-600">
-        I hate writing bloated software, my coding philosphy is hugely
+        I hate writing bloated software, my coding philosophy is hugely
         influenced from{" "}
         <span className="underline font-medium">
           <a
             href="https://cscie2x.dce.harvard.edu/hw/ch01s06.html"
             target="_blank"
           >
-            The Unix Philosphy
+            The Unix Philosophy
           </a>
         </span>{" "}
         and{" "}
