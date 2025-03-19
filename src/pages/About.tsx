@@ -5,7 +5,6 @@ import {
   FaPython,
   FaExternalLinkAlt,
   FaGithub,
-  FaCode,
 } from "react-icons/fa";
 import {
   FaAws,
