@@ -27,6 +27,7 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { PiGraph } from "react-icons/pi";
 import resume from "../assets/Prudhvi_Mutyala_Resume.pdf";
+import { GiAsteroid } from "react-icons/gi";
 
 const About = () => {
   const navigate = useNavigate();
@@ -140,7 +141,7 @@ const About = () => {
               }}
             >
               <div>
-                <PiGraph className="w-8 h-8 rounded-lg text-white bg-black p-2 mb-3" />
+                <GiAsteroid className="w-8 h-8 rounded-lg text-white bg-black p-2 mb-3" />
                 <h3 className="text-sm mb-1 font-medium text-gray-900">
                   Asteroids
                 </h3>
