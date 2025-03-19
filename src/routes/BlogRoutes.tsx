@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Blogs from "../pages/Blogs";
-import LearnDistSys from "../posts/LearnDistSys";
+import LearnDistSys from "../pages/posts/LearnDistSys";
 
 const BlogRoutes = () => {
   const location = useLocation();

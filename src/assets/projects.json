@@ -1,5 +1,12 @@
 [
   {
+    "Title": "Asteroids",
+    "Desciption": "A retro asteroids game written in C to introduce Raylib in Game dev reading group at ASU.",
+    "Stack": ["C", "Wasm", "Raylib", "Gamedev"],
+    "Link": "https://github.com/prudhvideep/asteroids",
+    "Demo": "https://prudhvideep.github.io/asteroids/asteroids.html"
+  },
+  {
     "Title": "fnd",
     "Desciption": "fnd is a versatile, intuitive file search utility for both local and remote environments.",
     "Stack": ["Go", "Cli"],
@@ -55,7 +62,7 @@
   {
     "Title": "Real Vision",
     "Desciption": "A CNN based classifier to flag Ai generated images trained on CIFAKE dataset.",
-    "Stack": ["Python","PyTorch","Data Science / Ai"],
+    "Stack": ["Python", "PyTorch", "Data Science / Ai"],
     "Link": "https://github.com/prudhvideep/RealVision"
   }
 ]

@@ -17,7 +17,7 @@ const Projects = () => {
   const [activeFilter, setActiveFilter] = useState<string | null>(null);
 
   const filterCategories = {
-    type: ["Data Science / Ai", "Frontend", "Backend", "Cli"],
+    type: ["Data Science / Ai", "Frontend", "Backend", "Cli", "Gamedev"],
     language: ["C","Go", "Java", "Python", "TypeScript", "JavaScript", "Bash", "Sql"],
     technology: [
       "GraphQl", "gRPC", "Tailwind", "Redis", "PostgreSQL", "React", "D3",

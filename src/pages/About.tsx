@@ -5,6 +5,7 @@ import {
   FaPython,
   FaExternalLinkAlt,
   FaGithub,
+  FaCode,
 } from "react-icons/fa";
 import {
   FaAws,
@@ -21,6 +22,7 @@ import {
   SiTypescript,
   SiTailwindcss,
   SiWebassembly,
+  SiC,
 } from "react-icons/si";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
@@ -34,7 +36,7 @@ const About = () => {
     <div className="mt-10 ml-auto mr-auto w-9/10 md:w-9/10 max-w-3xl opacity:1 transform:none">
       <h1 className="font-medium">Hi There!!</h1>
       <p className="mt-2 text-gray-600">
-        I'm Prudhvi and this is my website! Here's my{" "}
+        I'm Prudhvi! Here's my{" "}
         <span>
           <a
             target="_block"
@@ -44,7 +46,7 @@ const About = () => {
             Github
           </a>
         </span>
-        and my{" "}
+        and{" "}
         <span>
           <a
             target="_block"
@@ -57,13 +59,8 @@ const About = () => {
         .
       </p>
       <p className="mt-2 text-gray-600">
-        I'm a full stack developer, hoping to develop interactive software that
-        can help people share ideas and express things that can bring them joy.
-      </p>
-      <p className="mt-2 text-gray-600">
-        To acheive this goal, I like to work with low level systems that
-        form the fundamental building blocks in all the application and
-        interaction design.
+        I like working with low-level abstractions for the control they offer in
+        composing solutions from the ground up using first principles.
       </p>
       <p className="mt-2 text-gray-600">
         I hate writing bloated software, my coding philosphy is hugely
@@ -75,14 +72,27 @@ const About = () => {
           >
             The Unix Philosphy
           </a>
-        </span> and <span className="underline font-medium">
+        </span>{" "}
+        and{" "}
+        <span className="underline font-medium">
           <a
             href="https://matklad.github.io/2022/10/06/hard-mode-rust.html"
             target="_blank"
           >
             Hard mode Rust
           </a>
-        </span>. These days my coding stack mostly involves <span className="underline">Go</span>, <span className="underline">Typescript</span> and <span className="underline">Python</span>.
+        </span>
+        . These days my coding stack mostly involves{" "}
+        <span className="underline">Go</span>,{" "}
+        <span className="underline">Typescript</span> and{" "}
+        <span className="underline">Python</span>.
+      </p>
+      <p className="mt-2 text-gray-600">
+        Look around - You'll see that i particularly like{" "}
+        <span className="font-medium">
+          distributed systems, programming languages, computer graphics
+        </span>{" "}
+        and <span className="font-medium">music.</span>
       </p>
       <div className="mt-10">
         <h1 className="font-medium text-gray-900 mb-4 text-xl">Experience</h1>
@@ -131,20 +141,34 @@ const About = () => {
               }}
             >
               <div>
-                <FaTerminal className="w-8 h-8 rounded-lg text-white bg-black p-2 mb-3" />
-                <h3 className="text-sm mb-1 text-gray-900">fnd</h3>
+                <PiGraph className="w-8 h-8 rounded-lg text-white bg-black p-2 mb-3" />
+                <h3 className="text-sm mb-1 font-medium text-gray-900">
+                  Asteroids
+                </h3>
                 <p className="max-w-xs text-sm font-normal text-gray-600">
-                  A CLI tool for fast local and SSH file searches, supporting
-                  regex and glob patterns.
+                  A retro asteroids game in C to introduce Raylib at ASU's Game
+                  Dev reading group.
                 </p>
-                <div className="hidden md:flex mt-2 flex-row space-x-2 items-center">
-                  <FaGolang className="text-3xl" />
+                <div className="hidden md:flex mt-4 flex-row space-x-2 items-center">
+                  <SiC />
+                  <SiWebassembly />
                 </div>
-                <div className="mt-4 flex flex-row space-x-4 justify-start">
+                <div className="mt-4 flex flex-row space-x-2 md:space-x-4 justify-start">
                   <motion.a
-                    href="https://github.com/prudhvideep/fnd"
+                    href="https://prudhvideep.github.io/asteroids/asteroids.html"
                     target="_blank"
-                    className="flex items-center text-sm text-gray-500 hover:font-semibold hover:text-gray-900 transition-colors"
+                    className="flex items-center text-gray-500 hover:font-semibold hover:text-gray-900 transition-colors"
+                    whileHover={{
+                      scale: 1.05,
+                    }}
+                  >
+                    <FaExternalLinkAlt className="mr-1" />
+                    <span className="underline hover:no-underline">Demo</span>
+                  </motion.a>
+                  <motion.a
+                    href="https://github.com/prudhvideep/asteroids"
+                    target="_blank"
+                    className="flex items-center text-gray-500 hover:font-semibold hover:text-gray-900 transition-colors"
                     whileHover={{
                       scale: 1.05,
                     }}
@@ -197,6 +221,41 @@ const About = () => {
                   </motion.a>
                   <motion.a
                     href="https://github.com/prudhvideep/Video-Face-Recognition"
+                    target="_blank"
+                    className="flex items-center text-sm text-gray-500 hover:font-semibold hover:text-gray-900 transition-colors"
+                    whileHover={{
+                      scale: 1.05,
+                    }}
+                  >
+                    <FaGithub className="mr-1" />
+                    <span className="underline hover:no-underline">Source</span>
+                  </motion.a>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+          <div className="mt-5 p-2 group">
+            <motion.div
+              className="p-2 hover:cursor-pointer"
+              whileHover={{
+                scale: 1.1,
+                textShadow: "0px 0px 8px rgb(255,255,255)",
+                boxShadow: "0px 0px 8px rgb(255,255,255)",
+              }}
+            >
+              <div>
+                <FaTerminal className="w-8 h-8 rounded-lg text-white bg-black p-2 mb-3" />
+                <h3 className="text-sm mb-1 text-gray-900">fnd</h3>
+                <p className="max-w-xs text-sm font-normal text-gray-600">
+                  A CLI tool for fast local and SSH file searches, supporting
+                  regex and glob patterns.
+                </p>
+                <div className="hidden md:flex mt-2 flex-row space-x-2 items-center">
+                  <FaGolang className="text-3xl" />
+                </div>
+                <div className="mt-4 flex flex-row space-x-4 justify-start">
+                  <motion.a
+                    href="https://github.com/prudhvideep/fnd"
                     target="_blank"
                     className="flex items-center text-sm text-gray-500 hover:font-semibold hover:text-gray-900 transition-colors"
                     whileHover={{
