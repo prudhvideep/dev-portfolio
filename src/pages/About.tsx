@@ -90,7 +90,7 @@ const About = () => {
       <p className="mt-2 text-gray-600">
         Look around - You'll see that i particularly like{" "}
         <span className="font-medium">
-          distributed systems, programming languages, computer graphics
+          distributed systems, programming languages, machine learning, computer graphics
         </span>{" "}
         and <span className="font-medium">music.</span>
       </p>
