@@ -117,9 +117,10 @@ export default function Experience() {
         </div>
         <ul className="mt-2 list-disc ml-8">
           <li className="list-item text-gray-600 text-md">
-            Led the re-write of the omni-channel communication module for user
-            engagement using the actor paradigm in Go, enabling high concurrency
-            and improving p50 latency by 10% and p90 latency by 20%
+            Led the rewrite of the PDF report generation pipeline in Go,
+            leveraging commodity compute for rapid scaling, Redis for job state
+            management, and S3 for ephemeral storage, cutting million-record
+            processing time from 6 hours to 30 minutes.
           </li>
           <li className="list-item text-gray-600">
             Achieved seamless API migration with zero downtime by validating the
@@ -127,10 +128,10 @@ export default function Experience() {
             traffic replay, sticky canaries and A/B testing.
           </li>
           <li className="list-item text-gray-600">
-            Optimized data archiving and retrieval for applications in Oracle
-            cloud by automating data migration from high-cost storage to
-            archival tiers based on usage patterns, reducing storage costs by
-            11%.
+            Reduced storage costs by approximately 11% for applications in our
+            cost center by identifying cold, latency-tolerant paths, migrating
+            data to archival tiers, and improving lookup latency with Bloom
+            filters.
           </li>
         </ul>
         <div className="mt-4 flex flex-row items-center justify-between">
@@ -149,16 +150,17 @@ export default function Experience() {
           <li className="list-item text-gray-600 text-md">
             Designed, proposed and rolled out a revamped, containerized build
             infrastructure for CI/CD using Docker, Kubernetes and Jenkins over 8
-            months, migrating over 300 jobs used by over 100 developers
+            months, migrating over 300 jobs used by over 100 developers.
           </li>
           <li className="list-item text-gray-600">
             Implemented circuit breakers using Resilience4j and fallback
-            mechanisms, reducing service outage incidents by 23%, resulting in a
-            more fault-tolerant microservices architecture.
+            mechanisms to enhance error context during service degradation. This
+            improved fault tolerance and reduced customer enhancement requests
+            by 18%.
           </li>
           <li className="list-item text-gray-600">
             Built high-level, reusable eBPF tooling with simple Apis for network
-            diagnostics, tracing, and panic event decoding, optimizing
+            diagnostics, tracing, and panic event decoding, enhancing
             observability and simplifying debugging in Kubernetes-driven
             microservices.
           </li>
