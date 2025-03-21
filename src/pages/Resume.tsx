@@ -216,10 +216,32 @@ export default function Experience() {
             </p>
           </div>
         </div>
+        <div>
+          <p className="font-normal mt-2">Publications</p>
+        </div>
         <ul className="mt-2 list-disc ml-8">
-          {/* <li className="list-item text-gray-600 text-md">
-            
-          </li> */}
+          <li className="list-item text-gray-600 text-md">
+            <a
+              href="https://ieeexplore.ieee.org/abstract/document/8108296"
+              className="text-gray-600 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Relay selection and resource allocation for energy harvesting
+              cooperative networks
+            </a>
+          </li>
+          <li className="list-item text-gray-600 text-md">
+            <a
+              href="https://ieeexplore.ieee.org/abstract/document/8108278"
+              className="text-gray-600 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Optimal Resource Allocation and Relay Selection for
+              Self-Sustainable Relaying Networks
+            </a>
+          </li>
         </ul>
       </div>
       <div className="mt-16 p-6 w-full border border-gray-300 bg-white rounded-lg shadow-lg">
