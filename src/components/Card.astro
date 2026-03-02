@@ -13,7 +13,7 @@ const { variant: Heading = "h2", id, data, filePath } = Astro.props;
 const { title, description, ...props } = data;
 ---
 
-<li class="my-6">
+<li class="my-8">
   <a
     href={getPath(id, filePath)}
     class:list={[
@@ -29,5 +29,5 @@ const { title, description, ...props } = data;
     </Heading>
   </a>
   <Datetime {...props} />
-  <p>{description}</p>
+  <p class="font-body">{description}</p>
 </li>

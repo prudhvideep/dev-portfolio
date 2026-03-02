@@ -22,6 +22,7 @@ html[data-theme="dark"] {
 
 @theme inline {
   --font-app: var(--font-google-sans-code);
+  --font-body: var(--font-inter);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
@@ -39,7 +40,7 @@ html[data-theme="dark"] {
     @apply overflow-y-scroll scroll-smooth;
   }
   body {
-    @apply flex min-h-svh flex-col bg-background font-app text-foreground selection:bg-accent/75 selection:text-background;
+    @apply flex min-h-svh flex-col bg-background font-app leading-relaxed text-foreground selection:bg-accent/75 selection:text-background;
   }
   a,
   button {

@@ -3,18 +3,30 @@
 @layer base {
   /* ===== Override default Tailwind Typography styles ===== */
   .app-prose {
-    @apply prose;
+    @apply prose font-body;
 
     h1,
     h2,
     h3,
     h4,
     th {
-      @apply mb-3 text-foreground;
+      @apply font-app text-foreground;
+    }
+
+    h1 {
+      @apply -tracking-wide;
+    }
+
+    h2 {
+      @apply mt-10 mb-4 -tracking-tight;
     }
 
     h3 {
-      @apply italic;
+      @apply mt-6 mb-3 italic;
+    }
+
+    h4 {
+      @apply mt-4 mb-2;
     }
 
     p,
@@ -22,9 +34,21 @@
     ol,
     ul,
     figcaption,
-    table,
-    code {
+    table {
       @apply text-foreground;
+    }
+
+    p {
+      @apply my-3;
+    }
+
+    ul,
+    ol {
+      @apply my-4;
+    }
+
+    li + li {
+      @apply mt-2;
     }
 
     a {

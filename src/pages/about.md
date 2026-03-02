@@ -7,9 +7,9 @@ I'm Prudhvi! Here's my [Github](https://github.com/prudhvideep) and [Resume](/fi
 
 I like working with low-level abstractions for the control they offer in composing solutions from the ground up using first principles.
 
-I hate writing bloated software, my coding philosophy is hugely influenced from [The Unix Philosophy](https://cscie2x.dce.harvard.edu/hw/ch01s06.html) and [Hard mode Rust](https://matklad.github.io/2022/10/06/hard-mode-rust.html). These days my coding stack mostly involves Go, Typescript and Python.
+I hate writing bloated software, my coding philosophy is hugely influenced from [The Unix Philosophy](https://cscie2x.dce.harvard.edu/hw/ch01s06.html) and [Hard mode Rust](https://matklad.github.io/2022/10/06/hard-mode-rust.html). These days my coding stack mostly involves Rust, Typescript and Python.
 
-I particularly like **distributed systems, programming languages, machine learning, computer graphics** and **music.**
+I particularly like **distributed systems, programming languages, philosophy** and **music.**
 
 ## Experience
 

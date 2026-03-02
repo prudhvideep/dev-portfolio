@@ -7,49 +7,30 @@ import { SITE } from "@/config";
 
 const projects = [
   {
+    title: "Quill",
+    description: "A minimal, dependency-free text editor in C with search and syntax highlighting.",
+    tags: ["C", "Terminal"],
+    link: "https://github.com/prudhvideep/quill",
+  },
+  {
     title: "Asteroids",
-    description: "A retro asteroids game written in C to introduce Raylib in Game dev reading group at ASU.",
-    stack: ["C", "Wasm", "Raylib", "Gamedev"],
+    description: "A retro arcade game in C compiled to WebAssembly, playable in the browser.",
+    tags: ["C", "WebAssembly", "Raylib"],
     link: "https://github.com/prudhvideep/asteroids",
     demo: "https://prudhvideep.github.io/asteroids/asteroids.html",
   },
   {
-    title: "fnd",
-    description: "fnd is a versatile, intuitive file search utility for both local and remote environments.",
-    stack: ["Go", "Cli"],
-    link: "https://github.com/prudhvideep/fnd",
+    title: "Alloc",
+    description: "Arena-style memory allocator with bump and free-list allocation strategies.",
+    tags: ["C", "Systems"],
+    link: "https://github.com/prudhvideep/alloc",
   },
   {
-    title: "Snippets",
-    description: "A Zettelkasten-inspired personal knowledge base featuring Notion-like rich text editing and native code execution support powered by WASM.",
-    stack: ["TypeScript", "React", "TailwindCss", "PostgreSql", "Wasm"],
-    link: "https://github.com/prudhvideep/Snippets",
-    demo: "https://snippets-3fo.pages.dev/",
-  },
-  {
-    title: "Video Face Recognition",
-    description: "An app for detecting faces in a video, built using amazon web services.",
-    stack: ["Python", "Docker", "Terraform", "AWS", "React"],
-    link: "https://github.com/prudhvideep/Video-Face-Recognition",
-    demo: "https://main.d2g4ycz7ogc8gz.amplifyapp.com/",
-  },
-  {
-    title: "Dev Portfolio",
-    description: "Highlight your work and achievements using this minimal template.",
-    stack: ["TypeScript", "React", "Tailwind"],
-    link: "https://github.com/prudhvideep/dev-portfolio",
-  },
-  {
-    title: "Quill",
-    description: "A minimal, dependency-free text editor written in C. Quill provides essential features such as search and syntax highlighting.",
-    stack: ["C"],
-    link: "https://github.com/prudhvideep/quill",
-  },
-  {
-    title: "Real Vision",
-    description: "A CNN based classifier to flag Ai generated images trained on CIFAKE dataset.",
-    stack: ["Python", "PyTorch"],
-    link: "https://github.com/prudhvideep/RealVision",
+    title: "Relay",
+    description: "Peer-to-peer file sharing over WebRTC with no server intermediating the transfer.",
+    tags: ["TypeScript", "WebRTC", "Firebase"],
+    link: "https://github.com/prudhvideep/Relay",
+    demo: "https://relay-ubs.pages.dev/",
   },
 ];
 ---
@@ -59,11 +40,11 @@ const projects = [
   <Breadcrumb />
   <main id="main-content" class="app-layout pb-12">
     <h1 class="text-2xl font-semibold sm:text-3xl">Projects</h1>
-    <p class="mt-2 mb-6 italic">Learn to build, build to learn</p>
+    <p class="mt-3 mb-8 font-body italic">Learn to build, build to learn</p>
 
-    <ul class="space-y-6">
-      {projects.map(project => (
-        <li class="border-b border-border pb-6">
+    <ul class="space-y-8">
+      {projects.map((project, i) => (
+        <li class:list={["pb-8", { "border-b border-border": i < projects.length - 1 }]}>
           <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
             <div class="flex-1">
               <h2 class="text-xl font-medium">
@@ -71,11 +52,11 @@ const projects = [
                   {project.title}
                 </a>
               </h2>
-              <p class="mt-1 text-sm opacity-80">{project.description}</p>
-              <div class="mt-2 flex flex-wrap gap-2">
-                {project.stack.map(tech => (
-                  <span class="rounded bg-fill px-2 py-0.5 text-xs font-medium opacity-80">
-                    {tech}
+              <p class="mt-2 font-body text-sm opacity-80">{project.description}</p>
+              <div class="mt-3 flex flex-wrap gap-2">
+                {project.tags.map(tag => (
+                  <span class="rounded-full border border-accent/60 px-2.5 py-0.5 text-xs font-medium text-accent">
+                    {tag}
                   </span>
                 ))}
               </div>

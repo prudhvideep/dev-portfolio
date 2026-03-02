@@ -21,17 +21,18 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 <Layout>
   <Header />
   <main id="main-content" data-layout="index" class="app-layout">
-    <section id="hero" class:list={["pt-8 pb-6", "border-b border-border"]}>
-      <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
+    <section id="hero" class:list={["pt-12 pb-8", "border-b border-border"]}>
+      <h1 class="my-4 inline-block text-4xl font-bold -tracking-wide sm:my-8 sm:text-5xl">
         Hi There!
       </h1>
 
+      <div class="font-body text-base leading-relaxed">
       <p>
         I'm Prudhvi! I like working with low-level abstractions for the control
         they offer in composing solutions from the ground up using first
         principles.
       </p>
-      <p class="mt-2">
+      <p class="mt-4">
         I hate writing bloated software, my coding philosophy is hugely
         influenced from
         <LinkButton
@@ -47,13 +48,14 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
           Hard mode Rust
         </LinkButton>. These days my coding stack mostly involves Go, TypeScript and Python.
       </p>
-      <p class="mt-2">
+      <p class="mt-4">
         I particularly like <strong>distributed systems, programming languages,
         machine learning, computer graphics</strong> and <strong>music.</strong>
       </p>
+      </div>
       {
         SOCIALS.length > 0 && (
-          <div class="mt-4 flex max-sm:flex-col sm:items-center">
+          <div class="mt-6 flex max-sm:flex-col sm:items-center">
             <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">Find me:</div>
             <Socials />
           </div>
@@ -66,7 +68,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         <section
           id="featured"
           class:list={[
-            "pt-12 pb-6",
+            "pt-14 pb-8",
             { "border-b border-border": recentPosts.length > 0 },
           ]}
         >
@@ -82,7 +84,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 
     {
       recentPosts.length > 0 && (
-        <section id="recent-posts" class="pt-12 pb-6">
+        <section id="recent-posts" class="pt-14 pb-8">
           <h2 class="text-2xl font-semibold tracking-wide">Recent Posts</h2>
           <ul>
             {recentPosts.map(
