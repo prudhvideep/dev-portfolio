@@ -1,0 +1,76 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import { SITE } from "@/config";
+---
+
+<Layout title={`Resume | ${SITE.title}`}>
+  <Header />
+  <Breadcrumb />
+  <main id="main-content" class="app-layout app-prose mb-28 max-w-app">
+    <h1 class="text-2xl tracking-wider sm:text-3xl">Resume</h1>
+
+    <h2>Education</h2>
+
+    <p><strong>Arizona State University</strong> — M.S.C.S in Computer Science <em>(2023 - May 2025)</em><br/>CGPA: 4.1</p>
+
+    <p><strong>IIIT Hyderabad</strong> — M.S in Computer Engineering <em>(2017 - 2018)</em></p>
+
+    <p><strong>IIIT Hyderabad</strong> — Bachelors in Computer Engineering <em>(2013 - 2017)</em></p>
+
+    <h3>Teaching</h3>
+    <ul>
+      <li>TA for <em>Advanced communication theory</em>, Fall 2017</li>
+      <li>TA for <em>Information Theory and Coding</em>, Fall 2016</li>
+    </ul>
+
+    <h3>Graduate-level Technical Coursework</h3>
+    <ul>
+      <li>Distributed Database Systems (CSE 512)</li>
+      <li>Distributed Software Development (CSE 445 / CSE 598)</li>
+      <li>Cloud Computing (CSE 575)</li>
+      <li>Data Mining (CSE 572)</li>
+      <li>Statistical Machine Learning (CSE 575)</li>
+    </ul>
+
+    <h2>Professional Experience</h2>
+
+    <h3>Project Leader, Oracle Cloud <em>(Feb 2023 - Aug 2023)</em></h3>
+    <ul>
+      <li>Led the rewrite of the PDF report generation pipeline in Go, leveraging commodity compute for rapid scaling, Redis for job state management, and S3 for ephemeral storage, cutting million-record processing time from 6 hours to 30 minutes.</li>
+      <li>Achieved seamless API migration with zero downtime by validating the key performance metrics for the new APIs using a combination of traffic replay, sticky canaries and A/B testing.</li>
+      <li>Reduced storage costs by approximately 11% for applications in our cost center by identifying cold, latency-tolerant paths, migrating data to archival tiers, and improving lookup latency with Bloom filters.</li>
+    </ul>
+
+    <h3>Senior Application Developer, Oracle Cloud <em>(Dec 2020 - Feb 2023)</em></h3>
+    <ul>
+      <li>Designed, proposed and rolled out a revamped, containerized build infrastructure for CI/CD using Docker, Kubernetes and Jenkins over 8 months, migrating over 300 jobs used by over 100 developers.</li>
+      <li>Implemented circuit breakers using Resilience4j and fallback mechanisms to enhance error context during service degradation. This improved fault tolerance and reduced customer enhancement requests by 18%.</li>
+      <li>Built high-level, reusable eBPF tooling with simple Apis for network diagnostics, tracing, and panic event decoding, enhancing observability and simplifying debugging in Kubernetes-driven microservices.</li>
+    </ul>
+
+    <h3>Application Developer, Oracle Cloud <em>(June 2018 - Dec 2020)</em></h3>
+    <ul>
+      <li>Owned the end-to-end development of Cycle Count RESTful services using SpringBoot, from writing code and reviewing external feature requests to managing release documentation and approvals.</li>
+      <li>Migrated legacy JSF UIs to React, reducing build size by 60% by hosting static assets on a CDN and using Webpack bundle splitting to optimize caching and load times.</li>
+      <li>Identified and addressed gaps in automation and manual testing for the inventory module, enhancing coverage with JUnit for middleware and Selenium for automation, achieving 100% coverage for P1 flows and 90% for P2 and P3 flows.</li>
+    </ul>
+
+    <h3>Research Assistant, <a href="https://spcrc.iiit.ac.in/" target="_blank">Signal Processing and Communication Research Center</a> <em>(Aug 2016 - June 2018)</em></h3>
+
+    <h4>Publications</h4>
+    <ul>
+      <li><a href="https://ieeexplore.ieee.org/abstract/document/8108296" target="_blank" rel="noopener noreferrer">Relay selection and resource allocation for energy harvesting cooperative networks</a></li>
+      <li><a href="https://ieeexplore.ieee.org/abstract/document/8108278" target="_blank" rel="noopener noreferrer">Optimal Resource Allocation and Relay Selection for Self-Sustainable Relaying Networks</a></li>
+    </ul>
+
+    <hr />
+
+    <p class="text-center">
+      <a href="/files/Prudhvi_Mutyala_Resume.pdf" target="_blank" class="underline">Download Resume (PDF)</a>
+    </p>
+  </main>
+  <Footer />
+</Layout>
