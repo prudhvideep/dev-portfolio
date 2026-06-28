@@ -1,7 +1,7 @@
 ---
 title: "My approach to re-learning distributed systems."
 pubDatetime: 2024-10-10T00:00:00Z
-description: "Principled way in which i'm planning to re-learn distributed systems."
+description: ""
 tags: [distributed-systems]
 featured: true
 ---

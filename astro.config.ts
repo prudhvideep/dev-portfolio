@@ -1,6 +1,7 @@
 import { defineConfig, envField, fontProviders } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
+import mermaid from "astro-mermaid";
 import remarkToc from "remark-toc";
 import remarkCollapse from "remark-collapse";
 import {
@@ -9,12 +10,24 @@ import {
   transformerNotationWordHighlight,
 } from "@shikijs/transformers";
 import { transformerFileName } from "./src/utils/transformers/fileName";
+import { transformerCaption } from "./src/utils/transformers/caption";
 import { SITE } from "./src/config";
 
 // https://astro.build/config
 export default defineConfig({
   site: SITE.website,
   integrations: [
+    mermaid({
+      // autoTheme follows AstroPaper's html[data-theme] toggle (see src/scripts/theme.ts)
+      autoTheme: true,
+      theme: "default",
+      mermaidConfig: {
+        // Excalidraw-style sketchy rendering (rough.js)
+        look: "handDrawn",
+        // a little randomness in the roughness; tweak 1-3 for more/less sketch
+        handDrawnSeed: 1,
+      },
+    }),
     sitemap({
       filter: page => SITE.showArchives || !page.endsWith("/archives"),
     }),
@@ -28,6 +41,7 @@ export default defineConfig({
       wrap: false,
       transformers: [
         transformerFileName({ style: "v2", hideDot: false }),
+        transformerCaption(),
         transformerNotationHighlight(),
         transformerNotationWordHighlight(),
         transformerNotationDiff({ matchAlgorithm: "v3" }),

@@ -231,7 +231,11 @@ const nextPost =
    * allowing users to copy code easily. */
   function attachCopyButtons() {
     const copyButtonLabel = "Copy";
-    const codeBlocks = Array.from(document.querySelectorAll("pre"));
+    // Exclude mermaid diagram blocks — astro-mermaid reads the <pre>'s text
+    // content, so an injected "Copy" button corrupts the diagram source.
+    const codeBlocks = Array.from(
+      document.querySelectorAll("pre:not(.mermaid)")
+    );
 
     for (const codeBlock of codeBlocks) {
       const wrapper = document.createElement("div");

@@ -71,6 +71,11 @@
       @apply mx-auto border border-border;
     }
 
+    /* SVG diagrams (e.g. Excalidraw exports) shouldn't get the image border */
+    img[src$=".svg"] {
+      @apply border-0;
+    }
+
     figcaption {
       @apply opacity-75;
     }
