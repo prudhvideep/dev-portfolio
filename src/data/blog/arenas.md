@@ -1,7 +1,7 @@
 ---
 title: "Arenas in Rust - Part 1"
 pubDatetime: 2026-05-10T00:00:00Z
-description: ""
+description: "Building cyclic data structures in Rust."
 tags: [rust,arenas]
 featured: true
 ---
