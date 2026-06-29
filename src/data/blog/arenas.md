@@ -174,7 +174,7 @@ Now, let's reason about implementing cyclic data structures using arenas. Say an
 
 Unfortunately, this is hard to implement directly. Suppose we back the arena with a `Vec`. The binding owns the entire vector, so if we take a mutable reference to one element and store it inside another, the borrow checker immediately complains: it sees this as two mutable borrows of the same `Vec`.
 
-To get around this, we can use a technique similar to what `RefCell` does with `Ref` and `RefMut`: instead of storing references to other elements, each element stores the index of the element it points to. Like `Ref` and `RefMut`, indices are invisible to the borrow checker. We call this an indexed arena. There are many other kinds of arenas we can build, but they require a deeper understanding of lifetimes and a bit of unsafe code. I will cover those in the next part of this series.
+To get around this, we can use a technique similar to what `RefCell` does with `Ref` and `RefMut`: instead of storing references to other elements, each element stores the index of the element it points to. Like `Ref` and `RefMut`, indices are invisible to the borrow checker. We call this an indexed arena.
 
 ```rust caption="A simple indexed arena"
 #[derive(Debug,Clone,Copy,PartialEq, Eq, PartialOrd, Ord)]
@@ -297,5 +297,7 @@ With this approach, there is no need to reach out for `Rc` and `RefCell`; we do 
 
 ---
 
-In the arena implementation, I've left out many details to keep the API simple. For instance, `Idx` does not have any information about `T`; we can make it type-aware by using a marker type `PhantomData`. Even then, it's possible to mix up the indices between two arenas of the same type. We can fix this using branded lifetimes, which require some understanding of how lifetimes work. Indices also add a layer of indirection; ideally, `alloc` would hand back a reference to the allocation itself, which we could store inside other nodes to wire them together directly. This is exactly what a bump allocator like the `bumpalo` crate does. In the next part, I'll improve the indexed arena implementation and discuss generational arenas, lifetimes, and bump-allocated arenas. For a more polished implementation of an indexed arena, I'd implore you to look into the crate `la-arena` used by `rust-analyzer`.
+In the arena implementation, I've left out many details to keep the API simple. For instance, `Idx` does not have any information about `T`; we can make it type-aware by using a marker type `PhantomData`. Even then, it's possible to mix up the indices between two arenas of the same type. We can fix this using branded lifetimes, which require some understanding of how lifetimes work. Indices also add a layer of indirection; ideally, `alloc` should hand back a reference to the allocation itself, which we could store inside other nodes to wire them together directly. This is exactly what a bump allocator like the `bumpalo` crate does. 
+
+In the next part, I'll improve the indexed arena implementation and discuss generational arenas, lifetimes, and bump-allocated arenas. For a more polished implementation of an indexed arena, I'd implore you to look into the crate `la-arena` used by `rust-analyzer`.
 
