@@ -8,11 +8,11 @@ I'm Prudhvi! Here's my [Github](https://github.com/prudhvideep) and [Resume](/fi
 
 ## Education
 
-**Arizona State University** — M.S.C.S in Computer Science _(2023 - May 2025)_
+- **Arizona State University** — M.S.C.S in Computer Science _(2023 - May 2025)_
 
-**IIIT Hyderabad** — M.S in Computer Engineering _(2017 - 2018)_
+- **IIIT Hyderabad** — M.S in Computer Engineering _(2017 - 2018)_
 
-**IIIT Hyderabad** — Bachelors in Computer Engineering _(2013 - 2017)_
+- **IIIT Hyderabad** — Bachelors in Computer Engineering _(2013 - 2017)_
 
 ## Publications
 
