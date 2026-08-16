@@ -4,6 +4,7 @@ pubDatetime: 2024-10-10T00:00:00Z
 description: "A study plan for distributed systems."
 tags: [distributed-systems]
 featured: true
+draft: true
 ---
 
 My approach to learning things in computer science involves building short feedback loops. For example, my process for learning File IO in Go would include coming up with a use case that requires the use of file operations, such as finding the word count of a file. Then, I would review the documentation and write code to realize this use case. The purpose would drive my learning, and the feedback from executing the code would reinforce my understanding. Say I mastered file operations. Is this the end? No. Next, I would widen the problem scope to encompass more concepts and keep the feedback loop going.

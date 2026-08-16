@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    .mark { stroke: #006cac; }
+    @media (prefers-color-scheme: dark) {
+      .mark { stroke: #ff6b01; }
+    }
+  </style>
+  <path
+    class="mark"
+    d="M11 25 V7 h6 a5 5 0 0 1 0 10 h-6"
+    fill="none"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>

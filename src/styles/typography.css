@@ -96,11 +96,11 @@
     }
 
     code {
-      @apply rounded bg-muted/75 p-1 wrap-break-word text-foreground before:content-none after:content-none;
+      @apply rounded bg-muted/50 px-1.5 py-0.5 text-[0.9em] wrap-break-word text-accent/80 before:content-none after:content-none;
     }
 
     .astro-code code {
-      @apply flex-[1_0_100%] bg-inherit p-0;
+      @apply flex-[1_0_100%] bg-inherit p-0 text-[1em] text-inherit;
     }
 
     blockquote {
