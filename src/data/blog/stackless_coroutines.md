@@ -140,3 +140,10 @@ int main(void) {
 The macros act as sugar for the state machine implementation and help us reason about the code. Every yield returns and suspends the coroutine, and all the local state is maintained in the struct `Ctx`. In `CO_YIELD`, we update the state and yield the value; on subsequent invocations the control jumps directly inside the loop.
 
 Many languages have built-in constructs that can make implementing coroutines easier. In Rust, async functions return a future, which is a state machine the compiler generates from the function body. An executor provided by a runtime like Tokio can drive the futures to completion. A coroutine on its own is just a function that can pause. It is also the fundamental unit behind how concurrency is implemented in modern languages like Go and Rust.
+
+## References
+
+1. [Coroutines in C](https://www.chiark.greenend.org.uk/~sgtatham/coroutines.html)
+2. [Protothreads](https://dunkels.com/adam/pt/)
+3. [Tom Duff on Duff's Device](https://www.lysator.liu.se/c/duffs-device.html)
+4. [What Color is Your Function?](https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/)
