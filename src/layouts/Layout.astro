@@ -33,7 +33,8 @@ const socialImageURL = new URL(ogImage, Astro.url);
 
 // Twitter renders `summary` cards with a small square thumbnail, so the wide
 // per-post OG banner is unreadable there — use the square logo instead.
-const twitterImageURL = new URL("/favicon-512.png", Astro.url);
+// Opaque copy of the favicon; X's card pipeline is unreliable with alpha.
+const twitterImageURL = new URL("/twitter-card.png", Astro.url);
 
 const structuredData = {
   "@context": "https://schema.org",
