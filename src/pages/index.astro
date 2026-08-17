@@ -21,48 +21,41 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 <Layout>
   <Header />
   <main id="main-content" data-layout="index" class="app-layout">
-    <section id="hero" class:list={["pt-12 pb-8", "border-b border-border"]}>
-      <h1 class="my-4 inline-block text-4xl font-bold -tracking-wide sm:my-8 sm:text-5xl">
-        Hi There!
-      </h1>
+    <section id="hero" class="border-b border-border pt-12 pb-10">
+      <h1 class="text-4xl font-bold -tracking-wide sm:text-5xl">Hi There!</h1>
 
-      <div class="font-body text-base leading-relaxed">
-      <p>
-        I'm Prudhvi! I like working with low-level abstractions for the control
-        they offer in composing solutions from the ground up using first
-        principles.
-      </p>
-      <p class="mt-4">
-        I hate writing bloated software, my coding philosophy is hugely
-        influenced from
-        <LinkButton
-          class="underline decoration-dashed underline-offset-4 hover:text-accent"
-          href="https://cscie2x.dce.harvard.edu/hw/ch01s06.html"
-        >
-          The Unix Philosophy
-        </LinkButton>,
-        <LinkButton
-          class="underline decoration-dashed underline-offset-4 hover:text-accent"
-          href="https://tigerstyle.dev/"
-        >
-          Tiger Style
-        </LinkButton> and
-        <LinkButton
-          class="underline decoration-dashed underline-offset-4 hover:text-accent"
-          href="https://matklad.github.io/2022/10/06/hard-mode-rust.html"
-        >
-          Hard mode Rust
-        </LinkButton>. These days my coding stack mostly involves Rust, TypeScript and Python.
-      </p>
-      <p class="mt-4">
-        I particularly like <strong>distributed systems, programming languages,
-        philosophy</strong> and <strong>music.</strong>
-      </p>
+      <div class="mt-8 space-y-4 leading-relaxed">
+        <p>
+          I'm Prudhvi! I like working with low-level abstractions for the
+          control they offer in composing solutions from the ground up using
+          first principles.
+        </p>
+        <p>
+          I hate writing bloated software, my coding philosophy is hugely
+          influenced from <a
+            class="text-accent underline-offset-4 hover:underline"
+            href="https://cscie2x.dce.harvard.edu/hw/ch01s06.html"
+            >The Unix Philosophy</a
+          >, <a
+            class="text-accent underline-offset-4 hover:underline"
+            href="https://tigerstyle.dev/">Tiger Style</a
+          > and <a
+            class="text-accent underline-offset-4 hover:underline"
+            href="https://matklad.github.io/2022/10/06/hard-mode-rust.html"
+            >Hard mode Rust</a
+          >. These days my coding stack mostly involves Rust, TypeScript and
+          Python.
+        </p>
+        <p>
+          I particularly like distributed systems, programming languages,
+          philosophy and music.
+        </p>
       </div>
+
       {
         SOCIALS.length > 0 && (
-          <div class="mt-6 flex max-sm:flex-col sm:items-center">
-            <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">Find me:</div>
+          <div class="mt-8 flex gap-x-2 max-sm:flex-col max-sm:gap-y-1 sm:items-center">
+            <span class="whitespace-nowrap">Find me:</span>
             <Socials />
           </div>
         )
