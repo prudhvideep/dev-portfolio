@@ -3,21 +3,23 @@
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
+/* Dracula Alucard (light) */
 :root,
 html[data-theme="light"] {
-  --background: #fdfdfd;
-  --foreground: #282728;
-  --accent: #006cac;
-  --muted: #e6e6e6;
-  --border: #ece9e9;
+  --background: #fffbeb; /* background */
+  --foreground: #1f1f1f; /* foreground */
+  --accent: #644ac9; /* purple */
+  --muted: #cfcfde; /* selection */
+  --border: #c4c4d4; /* selection (darker) */
 }
 
+/* Catppuccin Mocha (dark) */
 html[data-theme="dark"] {
-  --background: #212737;
-  --foreground: #eaedf3;
-  --accent: #ff6b01;
-  --muted: #343f60;
-  --border: #ab4b08;
+  --background: #1e1e2e; /* base */
+  --foreground: #cdd6f4; /* text */
+  --accent: #cba6f7; /* mauve */
+  --muted: #313244; /* surface0 */
+  --border: #45475a; /* surface1 */
 }
 
 @theme inline {
