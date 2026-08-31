@@ -8,7 +8,7 @@
 html[data-theme="light"] {
   --background: #fffbeb; /* background */
   --foreground: #1f1f1f; /* foreground */
-  --accent: #644ac9; /* purple */
+  --accent: #cb3a2a; /* red */
   --muted: #cfcfde; /* selection */
   --border: #c4c4d4; /* selection (darker) */
 }
@@ -64,6 +64,18 @@ html[data-theme="dark"] {
 
 .active-nav {
   @apply underline decoration-wavy decoration-2 underline-offset-8;
+}
+
+/* Theme-swapped figures: show the SVG matching the active theme */
+img.theme-light,
+img.theme-dark {
+  display: block;
+  width: 100%;
+  margin-inline: auto;
+}
+html[data-theme="dark"] img.theme-light,
+html[data-theme="light"] img.theme-dark {
+  display: none;
 }
 
 /* Source: https://piccalil.li/blog/a-more-modern-css-reset/ */

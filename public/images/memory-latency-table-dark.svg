@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 768 401" role="img" aria-label="Memory hierarchy access latency table">
+  <clipPath id="c"><rect x="1" y="1" width="766" height="399" rx="10"/></clipPath>
+  <g clip-path="url(#c)">
+    <rect x="1" y="1" width="766" height="399" fill="#1e1e2e"/>
+    <rect x="1" y="1" width="766" height="48" fill="#313244"/>
+    <rect x="1" y="93" width="766" height="44" fill="#181825"/>
+    <rect x="1" y="181" width="766" height="44" fill="#181825"/>
+    <rect x="1" y="269" width="766" height="44" fill="#181825"/>
+    <rect x="1" y="357" width="766" height="44" fill="#181825"/>
+  </g>
+  <rect x="1" y="1" width="766" height="399" rx="10" fill="none" stroke="#45475a" stroke-width="1"/>
+  <line x1="1" y1="49" x2="767" y2="49" stroke="#45475a" stroke-width="1"/>
+  <text x="28" y="25.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="15" font-weight="600" fill="#cdd6f4">Level</text>
+  <text x="330" y="25.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="15" font-weight="600" fill="#cdd6f4">Typical size</text>
+  <text x="580" y="25.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="15" font-weight="600" fill="#cdd6f4">Latency</text>
+  <text x="28" y="71.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="15" fill="#cdd6f4">CPU register</text>
+  <text x="330" y="71.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="14" fill="#a6adc8">&lt; 1 KB</text>
+  <text x="580" y="71.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="15" fill="#cdd6f4">0.3 ns</text>
+  <text x="28" y="115.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="15" fill="#cdd6f4">L1 cache</text>
+  <text x="330" y="115.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="14" fill="#a6adc8">32–64 KB</text>
+  <text x="580" y="115.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="15" fill="#cdd6f4">1 ns</text>
+  <text x="28" y="159.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="15" fill="#cdd6f4">L2 cache</text>
+  <text x="330" y="159.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="14" fill="#a6adc8">0.5–2 MB</text>
+  <text x="580" y="159.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="15" fill="#cdd6f4">4 ns</text>
+  <text x="28" y="203.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="15" fill="#cdd6f4">L3 cache</text>
+  <text x="330" y="203.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="14" fill="#a6adc8">8–64 MB</text>
+  <text x="580" y="203.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="15" fill="#cdd6f4">12 ns</text>
+  <text x="28" y="247.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="15" fill="#cdd6f4">Main memory</text>
+  <text x="330" y="247.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="14" fill="#a6adc8">8–128 GB</text>
+  <text x="580" y="247.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="15" fill="#cdd6f4">80 ns</text>
+  <text x="28" y="291.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="15" fill="#cdd6f4">NVMe SSD</text>
+  <text x="330" y="291.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="14" fill="#a6adc8">0.5–4 TB</text>
+  <text x="580" y="291.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="15" fill="#cdd6f4">50 µs</text>
+  <text x="28" y="335.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="15" fill="#cdd6f4">SATA SSD</text>
+  <text x="330" y="335.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="14" fill="#a6adc8">0.5–4 TB</text>
+  <text x="580" y="335.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="15" fill="#cdd6f4">150 µs</text>
+  <text x="28" y="379.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="15" fill="#cdd6f4">Hard disk</text>
+  <text x="330" y="379.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="14" fill="#a6adc8">1–20 TB</text>
+  <text x="580" y="379.0" dominant-baseline="central" font-family="ui-monospace,monospace" font-size="15" fill="#cdd6f4">8 ms</text>
+</svg>
