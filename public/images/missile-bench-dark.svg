@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 680 136" role="img" aria-label="Benchmark comparing MissileGood and MissileBad CPU counters">
+<title>MissileGood vs MissileBad benchmark (kperf counters)</title>
+<desc>Same update loop over an array of each struct. MissileBad (136 B) runs 16.66 ms vs MissileGood (128 B) at 13.76 ms, burning 76.4M vs 62.0M cycles on near-identical instruction counts, because it suffers 17.72M vs 6.39M L1D load misses and 6.46M vs 2.56M store misses.</desc>
+<rect x="409.0" y="58" width="184.0" height="66" rx="8" fill="#f38ba8" fill-opacity="0.07"></rect>
+<rect x="16" y="18" width="648" height="108" rx="10" fill="none" stroke="#313244" stroke-width="1.2"></rect>
+<path d="M16,55 H664" fill="none" stroke="#313244" stroke-width="1"></path>
+<path d="M16,91 H664" fill="none" stroke="#313244" stroke-width="1"></path>
+<text style="fill:#a6adc8;font-family:ui-monospace,monospace;font-size:11.5px;" x="37.0" y="38" text-anchor="start" dominant-baseline="central">layout</text>
+<text style="fill:#a6adc8;font-family:ui-monospace,monospace;font-size:11.5px;" x="149.0" y="38" text-anchor="end" dominant-baseline="central">elem</text>
+<text style="fill:#a6adc8;font-family:ui-monospace,monospace;font-size:11.5px;" x="227.0" y="38" text-anchor="end" dominant-baseline="central">time</text>
+<text style="fill:#a6adc8;font-family:ui-monospace,monospace;font-size:11.5px;" x="277.0" y="38" text-anchor="end" dominant-baseline="central">GB/s</text>
+<text style="fill:#a6adc8;font-family:ui-monospace,monospace;font-size:11.5px;" x="339.0" y="38" text-anchor="end" dominant-baseline="central">cycles</text>
+<text style="fill:#a6adc8;font-family:ui-monospace,monospace;font-size:11.5px;" x="393.0" y="38" text-anchor="end" dominant-baseline="central">instr</text>
+<text style="fill:#fab387;font-family:ui-monospace,monospace;font-size:11.5px;" x="493.0" y="38" text-anchor="end" dominant-baseline="central">L1D ld-miss</text>
+<text style="fill:#fab387;font-family:ui-monospace,monospace;font-size:11.5px;" x="577.0" y="38" text-anchor="end" dominant-baseline="central">L1D st-miss</text>
+<text style="fill:#a6adc8;font-family:ui-monospace,monospace;font-size:11.5px;" x="639.0" y="38" text-anchor="end" dominant-baseline="central">IPC</text>
+<text style="fill:#a6e3a1;font-family:ui-monospace,monospace;font-size:12px;font-weight:600;" x="37.0" y="74" text-anchor="start" dominant-baseline="central">good</text>
+<text style="fill:#cdd6f4;font-family:ui-monospace,monospace;font-size:12px;" x="149.0" y="74" text-anchor="end" dominant-baseline="central">128 B</text>
+<text style="fill:#cdd6f4;font-family:ui-monospace,monospace;font-size:12px;" x="227.0" y="74" text-anchor="end" dominant-baseline="central">13.76 ms</text>
+<text style="fill:#cdd6f4;font-family:ui-monospace,monospace;font-size:12px;" x="277.0" y="74" text-anchor="end" dominant-baseline="central">18.6</text>
+<text style="fill:#cdd6f4;font-family:ui-monospace,monospace;font-size:12px;" x="339.0" y="74" text-anchor="end" dominant-baseline="central">62.0M</text>
+<text style="fill:#cdd6f4;font-family:ui-monospace,monospace;font-size:12px;" x="393.0" y="74" text-anchor="end" dominant-baseline="central">16.1M</text>
+<text style="fill:#cdd6f4;font-family:ui-monospace,monospace;font-size:12px;" x="639.0" y="74" text-anchor="end" dominant-baseline="central">0.26</text>
+<text style="fill:#a6e3a1;font-family:ui-monospace,monospace;font-size:12px;font-weight:600;" x="493.0" y="74" text-anchor="end" dominant-baseline="central">6.39M</text>
+<text style="fill:#a6e3a1;font-family:ui-monospace,monospace;font-size:12px;font-weight:600;" x="577.0" y="74" text-anchor="end" dominant-baseline="central">2.56M</text>
+<text style="fill:#f38ba8;font-family:ui-monospace,monospace;font-size:12px;font-weight:600;" x="37.0" y="108" text-anchor="start" dominant-baseline="central">bad</text>
+<text style="fill:#cdd6f4;font-family:ui-monospace,monospace;font-size:12px;" x="149.0" y="108" text-anchor="end" dominant-baseline="central">136 B</text>
+<text style="fill:#cdd6f4;font-family:ui-monospace,monospace;font-size:12px;" x="227.0" y="108" text-anchor="end" dominant-baseline="central">16.66 ms</text>
+<text style="fill:#cdd6f4;font-family:ui-monospace,monospace;font-size:12px;" x="277.0" y="108" text-anchor="end" dominant-baseline="central">16.3</text>
+<text style="fill:#cdd6f4;font-family:ui-monospace,monospace;font-size:12px;" x="339.0" y="108" text-anchor="end" dominant-baseline="central">76.4M</text>
+<text style="fill:#cdd6f4;font-family:ui-monospace,monospace;font-size:12px;" x="393.0" y="108" text-anchor="end" dominant-baseline="central">16.3M</text>
+<text style="fill:#cdd6f4;font-family:ui-monospace,monospace;font-size:12px;" x="639.0" y="108" text-anchor="end" dominant-baseline="central">0.21</text>
+<text style="fill:#f38ba8;font-family:ui-monospace,monospace;font-size:12px;font-weight:600;" x="493.0" y="108" text-anchor="end" dominant-baseline="central">17.72M</text>
+<text style="fill:#f38ba8;font-family:ui-monospace,monospace;font-size:12px;font-weight:600;" x="577.0" y="108" text-anchor="end" dominant-baseline="central">6.46M</text>
+</svg>

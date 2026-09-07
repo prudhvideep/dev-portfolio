@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 680 480" role="img" aria-label="Memory tiers of a multi core CPU with stalling instruction pointers and a remote NUMA read">
+<defs><mask id="imagine-text-gaps-nym3s7" maskUnits="userSpaceOnUse"><rect x="0" y="0" width="680" height="480" fill="white"></rect><rect x="52" y="19.75" width="47.7421875" height="16.5" fill="black" rx="2"></rect><rect x="68" y="46.75" width="87.4765625" height="16.5" fill="black" rx="2"></rect><rect x="68" y="64.75" width="67.609375" height="16.5" fill="black" rx="2"></rect><rect x="68" y="82.75" width="87.4765625" height="16.5" fill="black" rx="2"></rect><rect x="184" y="19.75" width="47.7421875" height="16.5" fill="black" rx="2"></rect><rect x="200" y="46.75" width="87.4765625" height="16.5" fill="black" rx="2"></rect><rect x="200" y="64.75" width="60.984375" height="16.5" fill="black" rx="2"></rect><rect x="200" y="82.75" width="87.4765625" height="16.5" fill="black" rx="2"></rect><rect x="364" y="19.75" width="47.7421875" height="16.5" fill="black" rx="2"></rect><rect x="380" y="46.75" width="87.4765625" height="16.5" fill="black" rx="2"></rect><rect x="380" y="64.75" width="67.609375" height="16.5" fill="black" rx="2"></rect><rect x="380" y="82.75" width="87.4765625" height="16.5" fill="black" rx="2"></rect><rect x="496" y="19.75" width="47.7421875" height="16.5" fill="black" rx="2"></rect><rect x="512" y="46.75" width="87.4765625" height="16.5" fill="black" rx="2"></rect><rect x="512" y="64.75" width="47.7421875" height="16.5" fill="black" rx="2"></rect><rect x="512" y="82.75" width="87.4765625" height="16.5" fill="black" rx="2"></rect><rect x="84.1953125" y="118.75" width="67.609375" height="16.5" fill="black" rx="2"></rect><rect x="216.1953125" y="118.75" width="67.609375" height="16.5" fill="black" rx="2"></rect><rect x="396.1953125" y="118.75" width="67.609375" height="16.5" fill="black" rx="2"></rect><rect x="528.1953125" y="118.75" width="67.609375" height="16.5" fill="black" rx="2"></rect><rect x="81.48828125" y="160" width="73.0234375" height="18" fill="black" rx="2"></rect><rect x="80.88671875" y="174.75" width="74.2265625" height="16.5" fill="black" rx="2"></rect><rect x="213.48828125" y="160" width="73.0234375" height="18" fill="black" rx="2"></rect><rect x="212.88671875" y="174.75" width="74.2265625" height="16.5" fill="black" rx="2"></rect><rect x="393.48828125" y="160" width="73.0234375" height="18" fill="black" rx="2"></rect><rect x="392.88671875" y="174.75" width="74.2265625" height="16.5" fill="black" rx="2"></rect><rect x="525.48828125" y="160" width="73.0234375" height="18" fill="black" rx="2"></rect><rect x="524.88671875" y="174.75" width="74.2265625" height="16.5" fill="black" rx="2"></rect><rect x="85.1015625" y="211" width="65.796875" height="18" fill="black" rx="2"></rect><rect x="77.57421875" y="225.75" width="80.8515625" height="16.5" fill="black" rx="2"></rect><rect x="217.1015625" y="211" width="65.796875" height="18" fill="black" rx="2"></rect><rect x="209.57421875" y="225.75" width="80.8515625" height="16.5" fill="black" rx="2"></rect><rect x="397.1015625" y="211" width="65.796875" height="18" fill="black" rx="2"></rect><rect x="389.57421875" y="225.75" width="80.8515625" height="16.5" fill="black" rx="2"></rect><rect x="529.1015625" y="211" width="65.796875" height="18" fill="black" rx="2"></rect><rect x="521.57421875" y="225.75" width="80.8515625" height="16.5" fill="black" rx="2"></rect><rect x="64" y="268" width="174.171875" height="18" fill="black" rx="2"></rect><rect x="256.2578125" y="268.75" width="47.7421875" height="16.5" fill="black" rx="2"></rect><rect x="376" y="268" width="174.171875" height="18" fill="black" rx="2"></rect><rect x="568.2578125" y="268.75" width="47.7421875" height="16.5" fill="black" rx="2"></rect><rect x="60" y="320" width="138.046875" height="18" fill="black" rx="2"></rect><rect x="60" y="336.75" width="80.8515625" height="16.5" fill="black" rx="2"></rect><rect x="268.2578125" y="320.75" width="47.7421875" height="16.5" fill="black" rx="2"></rect><rect x="364" y="320" width="138.046875" height="18" fill="black" rx="2"></rect><rect x="364" y="336.75" width="80.8515625" height="16.5" fill="black" rx="2"></rect><rect x="572.2578125" y="320.75" width="47.7421875" height="16.5" fill="black" rx="2"></rect><rect x="44" y="380" width="65.796875" height="18" fill="black" rx="2"></rect><rect x="44" y="396.75" width="233.171875" height="16.5" fill="black" rx="2"></rect><rect x="581.640625" y="380.75" width="54.359375" height="16.5" fill="black" rx="2"></rect><rect x="36" y="141.75" width="60.984375" height="16.5" fill="black" rx="2"></rect><rect x="36" y="191.75" width="67.609375" height="16.5" fill="black" rx="2"></rect><rect x="36" y="243.75" width="74.2265625" height="16.5" fill="black" rx="2"></rect><rect x="36" y="295.75" width="74.2265625" height="16.5" fill="black" rx="2"></rect><rect x="36" y="356.75" width="74.2265625" height="16.5" fill="black" rx="2"></rect><rect x="286.328125" y="356.75" width="107.34375" height="16.5" fill="black" rx="2"></rect><rect x="74.40625" y="429.75" width="531.1875" height="16.5" fill="black" rx="2"></rect><rect x="31.359375" y="449.75" width="617.28125" height="16.5" fill="black" rx="2"></rect></mask></defs><title>Memory tiers of a multi core CPU with stalling instruction pointers and a remote NUMA read</title><desc>Four cores, each with a three instruction stream and a moving instruction pointer that holds on its load until the data arrives. Below them sit registers, private L1 and L2, a shared L3 per NUMA node, per node DRAM and a shared NVMe SSD. Four fetches climb in parallel and shrink from a 4 KiB page to a 128 byte sector in L3 and L2, then a 64 byte line in L1, then an 8 byte word. Core 2 reads memory owned by node 0, so its block crosses the cross node link before it can start climbing.</desc>
+
+<path d="M118,112 V414" fill="none" stroke="#313244" stroke-width="1" stroke-dasharray="3 5" mask="url(#imagine-text-gaps-nym3s7)"></path>
+<path d="M250,112 V414" fill="none" stroke="#313244" stroke-width="1" stroke-dasharray="3 5" mask="url(#imagine-text-gaps-nym3s7)"></path>
+<path d="M430,112 V414" fill="none" stroke="#313244" stroke-width="1" stroke-dasharray="3 5" mask="url(#imagine-text-gaps-nym3s7)"></path>
+<path d="M562,112 V414" fill="none" stroke="#313244" stroke-width="1" stroke-dasharray="3 5" mask="url(#imagine-text-gaps-nym3s7)"></path>
+
+<text style="fill:#6c7086;font-family:ui-monospace,monospace;font-size:11px" x="56" y="28" dominant-baseline="central">core 0</text>
+<path d="M56,41 Q118,39 180,41.5 Q181.5,70 179.5,100 Q118,101.5 56,99 Q54.5,70 56,41 Z" fill="#1e1e2e" stroke="#45475a" stroke-width="1" stroke-dasharray="4 3" stroke-linejoin="round"></path>
+<text style="fill:#a6adc8;font-family:ui-monospace,monospace;font-size:11px" x="72" y="55" dominant-baseline="central">ld r1,[0xB0]</text>
+<text style="fill:#a6adc8;font-family:ui-monospace,monospace;font-size:11px" x="72" y="73" dominant-baseline="central">add r1,r2</text>
+<text style="fill:#a6adc8;font-family:ui-monospace,monospace;font-size:11px" x="72" y="91" dominant-baseline="central">st [0xC4],r1</text>
+<g><animateTransform attributeName="transform" type="translate" values="0,0;0,18;0,36;0,0" keyTimes="0;0.78;0.88;0.96" dur="8s" calcMode="discrete" repeatCount="indefinite"></animateTransform>
+<rect x="58" y="47" width="120" height="16" rx="3" fill="#cba6f7" opacity="0.16"></rect>
+<path d="M61,51 L66,55 L61,59 Z" fill="#cba6f7"></path></g>
+
+<text style="fill:#6c7086;font-family:ui-monospace,monospace;font-size:11px" x="188" y="28" dominant-baseline="central">core 1</text>
+<path d="M188,41 Q250,39 312,41.5 Q313.5,70 311.5,100 Q250,101.5 188,99 Q186.5,70 188,41 Z" fill="#1e1e2e" stroke="#45475a" stroke-width="1" stroke-dasharray="4 3" stroke-linejoin="round"></path>
+<text style="fill:#a6adc8;font-family:ui-monospace,monospace;font-size:11px" x="204" y="55" dominant-baseline="central">ld r3,[0x2C]</text>
+<text style="fill:#a6adc8;font-family:ui-monospace,monospace;font-size:11px" x="204" y="73" dominant-baseline="central">shl r3,4</text>
+<text style="fill:#a6adc8;font-family:ui-monospace,monospace;font-size:11px" x="204" y="91" dominant-baseline="central">st [0x30],r3</text>
+<g><animateTransform attributeName="transform" type="translate" values="0,0;0,18;0,36;0,0" keyTimes="0;0.7;0.85;0.96" dur="5s" calcMode="discrete" repeatCount="indefinite"></animateTransform>
+<rect x="190" y="47" width="120" height="16" rx="3" fill="#cba6f7" opacity="0.16"></rect>
+<path d="M193,51 L198,55 L193,59 Z" fill="#cba6f7"></path></g>
+
+<text style="fill:#6c7086;font-family:ui-monospace,monospace;font-size:11px" x="368" y="28" dominant-baseline="central">core 2</text>
+<path d="M368,41 Q430,39 492,41.5 Q493.5,70 491.5,100 Q430,101.5 368,99 Q366.5,70 368,41 Z" fill="#1e1e2e" stroke="#45475a" stroke-width="1" stroke-dasharray="4 3" stroke-linejoin="round"></path>
+<text style="fill:#a6adc8;font-family:ui-monospace,monospace;font-size:11px" x="384" y="55" dominant-baseline="central">ld r5,[0xF8]</text>
+<text style="fill:#a6adc8;font-family:ui-monospace,monospace;font-size:11px" x="384" y="73" dominant-baseline="central">mul r5,r6</text>
+<text style="fill:#a6adc8;font-family:ui-monospace,monospace;font-size:11px" x="384" y="91" dominant-baseline="central">st [0x40],r5</text>
+<g><animateTransform attributeName="transform" type="translate" values="0,0;0,18;0,36;0,0" keyTimes="0;0.82;0.9;0.97" dur="6.5s" calcMode="discrete" repeatCount="indefinite"></animateTransform>
+<rect x="370" y="47" width="120" height="16" rx="3" fill="#eba0ac" opacity="0.18"></rect>
+<path d="M373,51 L378,55 L373,59 Z" fill="#eba0ac"></path></g>
+
+<text style="fill:#6c7086;font-family:ui-monospace,monospace;font-size:11px" x="500" y="28" dominant-baseline="central">core 3</text>
+<path d="M500,41 Q562,39 624,41.5 Q625.5,70 623.5,100 Q562,101.5 500,99 Q498.5,70 500,41 Z" fill="#1e1e2e" stroke="#45475a" stroke-width="1" stroke-dasharray="4 3" stroke-linejoin="round"></path>
+<text style="fill:#a6adc8;font-family:ui-monospace,monospace;font-size:11px" x="516" y="55" dominant-baseline="central">ld r7,[0x08]</text>
+<text style="fill:#a6adc8;font-family:ui-monospace,monospace;font-size:11px" x="516" y="73" dominant-baseline="central">inc r7</text>
+<text style="fill:#a6adc8;font-family:ui-monospace,monospace;font-size:11px" x="516" y="91" dominant-baseline="central">st [0x0C],r7</text>
+<g><animateTransform attributeName="transform" type="translate" values="0,0;0,18;0,36;0,0" keyTimes="0;0.62;0.82;0.96" dur="2.5s" calcMode="discrete" repeatCount="indefinite"></animateTransform>
+<rect x="502" y="47" width="120" height="16" rx="3" fill="#cba6f7" opacity="0.16"></rect>
+<path d="M505,51 L510,55 L505,59 Z" fill="#cba6f7"></path></g>
+
+<path d="M76,113 Q118,111 160,113.5 Q161.5,127 159.5,142 Q118,143.5 76,141 Q74.5,127 76,113 Z" fill="#1e1e2e" stroke="#cba6f7" stroke-width="1.2" stroke-linejoin="round"></path>
+<text style="fill:#cba6f7;font-family:ui-monospace,monospace;font-size:11px" x="118" y="127" text-anchor="middle" dominant-baseline="central">registers</text>
+<path d="M208,113 Q250,111 292,113.5 Q293.5,127 291.5,142 Q250,143.5 208,141 Q206.5,127 208,113 Z" fill="#1e1e2e" stroke="#cba6f7" stroke-width="1.2" stroke-linejoin="round"></path>
+<text style="fill:#cba6f7;font-family:ui-monospace,monospace;font-size:11px" x="250" y="127" text-anchor="middle" dominant-baseline="central">registers</text>
+<path d="M388,113 Q430,111 472,113.5 Q473.5,127 471.5,142 Q430,143.5 388,141 Q386.5,127 388,113 Z" fill="#1e1e2e" stroke="#cba6f7" stroke-width="1.2" stroke-linejoin="round"></path>
+<text style="fill:#cba6f7;font-family:ui-monospace,monospace;font-size:11px" x="430" y="127" text-anchor="middle" dominant-baseline="central">registers</text>
+<path d="M520,113 Q562,111 604,113.5 Q605.5,127 603.5,142 Q562,143.5 520,141 Q518.5,127 520,113 Z" fill="#1e1e2e" stroke="#cba6f7" stroke-width="1.2" stroke-linejoin="round"></path>
+<text style="fill:#cba6f7;font-family:ui-monospace,monospace;font-size:11px" x="562" y="127" text-anchor="middle" dominant-baseline="central">registers</text>
+
+<path d="M68,159 Q118,157 168,159.5 Q169.5,175 167.5,192 Q118,193.5 68,191 Q66.5,175 68,159 Z" fill="#1e1e2e" stroke="#94e2d5" stroke-width="1.2" stroke-linejoin="round"></path>
+<text style="fill:#94e2d5;font-family:ui-monospace,monospace;font-size:12px" x="118" y="169" text-anchor="middle" dominant-baseline="central">L1 32 KiB</text>
+<text style="fill:#7f849c;font-family:ui-monospace,monospace;font-size:11px" x="118" y="183" text-anchor="middle" dominant-baseline="central">64 B  ~1 ns</text>
+<path d="M200,159 Q250,157 300,159.5 Q301.5,175 299.5,192 Q250,193.5 200,191 Q198.5,175 200,159 Z" fill="#1e1e2e" stroke="#94e2d5" stroke-width="1.2" stroke-linejoin="round"></path>
+<text style="fill:#94e2d5;font-family:ui-monospace,monospace;font-size:12px" x="250" y="169" text-anchor="middle" dominant-baseline="central">L1 32 KiB</text>
+<text style="fill:#7f849c;font-family:ui-monospace,monospace;font-size:11px" x="250" y="183" text-anchor="middle" dominant-baseline="central">64 B  ~1 ns</text>
+<path d="M380,159 Q430,157 480,159.5 Q481.5,175 479.5,192 Q430,193.5 380,191 Q378.5,175 380,159 Z" fill="#1e1e2e" stroke="#94e2d5" stroke-width="1.2" stroke-linejoin="round"></path>
+<text style="fill:#94e2d5;font-family:ui-monospace,monospace;font-size:12px" x="430" y="169" text-anchor="middle" dominant-baseline="central">L1 32 KiB</text>
+<text style="fill:#7f849c;font-family:ui-monospace,monospace;font-size:11px" x="430" y="183" text-anchor="middle" dominant-baseline="central">64 B  ~1 ns</text>
+<path d="M512,159 Q562,157 612,159.5 Q613.5,175 611.5,192 Q562,193.5 512,191 Q510.5,175 512,159 Z" fill="#1e1e2e" stroke="#94e2d5" stroke-width="1.2" stroke-linejoin="round"></path>
+<text style="fill:#94e2d5;font-family:ui-monospace,monospace;font-size:12px" x="562" y="169" text-anchor="middle" dominant-baseline="central">L1 32 KiB</text>
+<text style="fill:#7f849c;font-family:ui-monospace,monospace;font-size:11px" x="562" y="183" text-anchor="middle" dominant-baseline="central">64 B  ~1 ns</text>
+
+<path d="M59,209 Q118,207 177,209.5 Q178.5,226 176.5,244 Q118,245.5 59,243 Q57.5,226 59,209 Z" fill="#1e1e2e" stroke="#74c7ec" stroke-width="1.2" stroke-linejoin="round"></path>
+<text style="fill:#74c7ec;font-family:ui-monospace,monospace;font-size:12px" x="118" y="220" text-anchor="middle" dominant-baseline="central">L2 1 MiB</text>
+<text style="fill:#7f849c;font-family:ui-monospace,monospace;font-size:11px" x="118" y="234" text-anchor="middle" dominant-baseline="central">128 B  ~4 ns</text>
+<path d="M191,209 Q250,207 309,209.5 Q310.5,226 308.5,244 Q250,245.5 191,243 Q189.5,226 191,209 Z" fill="#1e1e2e" stroke="#74c7ec" stroke-width="1.2" stroke-linejoin="round"></path>
+<text style="fill:#74c7ec;font-family:ui-monospace,monospace;font-size:12px" x="250" y="220" text-anchor="middle" dominant-baseline="central">L2 1 MiB</text>
+<text style="fill:#7f849c;font-family:ui-monospace,monospace;font-size:11px" x="250" y="234" text-anchor="middle" dominant-baseline="central">128 B  ~4 ns</text>
+<path d="M371,209 Q430,207 489,209.5 Q490.5,226 488.5,244 Q430,245.5 371,243 Q369.5,226 371,209 Z" fill="#1e1e2e" stroke="#74c7ec" stroke-width="1.2" stroke-linejoin="round"></path>
+<text style="fill:#74c7ec;font-family:ui-monospace,monospace;font-size:12px" x="430" y="220" text-anchor="middle" dominant-baseline="central">L2 1 MiB</text>
+<text style="fill:#7f849c;font-family:ui-monospace,monospace;font-size:11px" x="430" y="234" text-anchor="middle" dominant-baseline="central">128 B  ~4 ns</text>
+<path d="M503,209 Q562,207 621,209.5 Q622.5,226 620.5,244 Q562,245.5 503,243 Q501.5,226 503,209 Z" fill="#1e1e2e" stroke="#74c7ec" stroke-width="1.2" stroke-linejoin="round"></path>
+<text style="fill:#74c7ec;font-family:ui-monospace,monospace;font-size:12px" x="562" y="220" text-anchor="middle" dominant-baseline="central">L2 1 MiB</text>
+<text style="fill:#7f849c;font-family:ui-monospace,monospace;font-size:11px" x="562" y="234" text-anchor="middle" dominant-baseline="central">128 B  ~4 ns</text>
+
+<path d="M56,261 Q184,259 312,261.5 Q313.5,277 311.5,294 Q184,295.5 56,293 Q54.5,277 56,261 Z" fill="#1e1e2e" stroke="#89b4fa" stroke-width="1.2" stroke-linejoin="round"></path>
+<text style="fill:#89b4fa;font-family:ui-monospace,monospace;font-size:12px" x="68" y="277" dominant-baseline="central">L3 16 MiB shared, 128 B</text>
+<text style="fill:#7f849c;font-family:ui-monospace,monospace;font-size:11px" x="300" y="277" text-anchor="end" dominant-baseline="central">~15 ns</text>
+<path d="M368,261 Q496,259 624,261.5 Q625.5,277 623.5,294 Q496,295.5 368,293 Q366.5,277 368,261 Z" fill="#1e1e2e" stroke="#89b4fa" stroke-width="1.2" stroke-linejoin="round"></path>
+<text style="fill:#89b4fa;font-family:ui-monospace,monospace;font-size:12px" x="380" y="277" dominant-baseline="central">L3 16 MiB shared, 128 B</text>
+<text style="fill:#7f849c;font-family:ui-monospace,monospace;font-size:11px" x="612" y="277" text-anchor="end" dominant-baseline="central">~15 ns</text>
+
+<path d="M52,315 Q188,313 324,315.5 Q325.5,334 323.5,354 Q188,355.5 52,353 Q50.5,334 52,315 Z" fill="#1e1e2e" stroke="#a6e3a1" stroke-width="1.2" stroke-linejoin="round"></path>
+<text style="fill:#a6e3a1;font-family:ui-monospace,monospace;font-size:12px" x="64" y="329" dominant-baseline="central">node 0 dram 64 GiB</text>
+<text style="fill:#6c7086;font-family:ui-monospace,monospace;font-size:11px" x="64" y="345" dominant-baseline="central">4 KiB pages</text>
+<text style="fill:#7f849c;font-family:ui-monospace,monospace;font-size:11px" x="312" y="329" text-anchor="end" dominant-baseline="central">~90 ns</text>
+<path d="M356,315 Q492,313 628,315.5 Q629.5,334 627.5,354 Q492,355.5 356,353 Q354.5,334 356,315 Z" fill="#1e1e2e" stroke="#a6e3a1" stroke-width="1.2" stroke-linejoin="round"></path>
+<text style="fill:#a6e3a1;font-family:ui-monospace,monospace;font-size:12px" x="368" y="329" dominant-baseline="central">node 1 dram 64 GiB</text>
+<text style="fill:#6c7086;font-family:ui-monospace,monospace;font-size:11px" x="368" y="345" dominant-baseline="central">4 KiB pages</text>
+<text style="fill:#7f849c;font-family:ui-monospace,monospace;font-size:11px" x="616" y="329" text-anchor="end" dominant-baseline="central">~90 ns</text>
+<path d="M324,334 H356" fill="none" stroke="#eba0ac" stroke-width="1.4" stroke-dasharray="4 3"></path>
+
+<path d="M32,375 Q340,373 648,375.5 Q649.5,395 647.5,416 Q340,417.5 32,415 Q30.5,395 32,375 Z" fill="#1e1e2e" stroke="#fab387" stroke-width="1.2" stroke-linejoin="round"></path>
+<text style="fill:#fab387;font-family:ui-monospace,monospace;font-size:12px" x="48" y="389" dominant-baseline="central">nvme ssd</text>
+<text style="fill:#6c7086;font-family:ui-monospace,monospace;font-size:11px" x="48" y="405" dominant-baseline="central">non volatile, shared by both nodes</text>
+<text style="fill:#7f849c;font-family:ui-monospace,monospace;font-size:11px" x="632" y="389" text-anchor="end" dominant-baseline="central">~100 µs</text>
+
+<text style="fill:#6c7086;font-family:ui-monospace,monospace;font-size:11px" x="40" y="150" dominant-baseline="central">8 B word</text>
+<text style="fill:#6c7086;font-family:ui-monospace,monospace;font-size:11px" x="40" y="200" dominant-baseline="central">64 B line</text>
+<text style="fill:#6c7086;font-family:ui-monospace,monospace;font-size:11px" x="40" y="252" dominant-baseline="central">128 B line</text>
+<text style="fill:#6c7086;font-family:ui-monospace,monospace;font-size:11px" x="40" y="304" dominant-baseline="central">128 B line</text>
+<text style="fill:#6c7086;font-family:ui-monospace,monospace;font-size:11px" x="40" y="365" dominant-baseline="central">4 KiB page</text>
+<text style="fill:#eba0ac;font-family:ui-monospace,monospace;font-size:11px" x="340" y="365" text-anchor="middle" dominant-baseline="central">cross node link</text>
+
+<g><animateTransform attributeName="transform" type="translate" values="118,395;118,395;118,334;118,334;118,277;118,277;118,226;118,226;118,175;118,175;118,127;118,127;118,395;118,395" keyTimes="0;0.05;0.18;0.26;0.36;0.44;0.52;0.58;0.65;0.71;0.78;0.92;0.96;1" dur="8s" repeatCount="indefinite"></animateTransform>
+<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.03;0.9;0.94;1" dur="8s" repeatCount="indefinite"></animate>
+<g><animateTransform attributeName="transform" type="scale" values="1;0.7;0.48;0.24;1" keyTimes="0;0.26;0.58;0.78;0.96" dur="8s" calcMode="discrete" repeatCount="indefinite"></animateTransform>
+<path d="M-14,-7 Q0,-9 14,-7.5 Q15.5,0 14,7.5 Q0,9 -14,7.5 Q-15.5,0 -14,-7 Z" fill="#fab387" stroke="#fab387" stroke-width="1" stroke-linejoin="round"><animate attributeName="fill" values="#fab387;#f9e2af;#f9e2af;#cba6f7;#fab387" keyTimes="0;0.26;0.58;0.78;0.96" dur="8s" calcMode="discrete" repeatCount="indefinite"></animate><animate attributeName="stroke" values="#fab387;#f9e2af;#f9e2af;#cba6f7;#fab387" keyTimes="0;0.26;0.58;0.78;0.96" dur="8s" calcMode="discrete" repeatCount="indefinite"></animate></path></g></g>
+
+<g><animateTransform attributeName="transform" type="translate" values="250,334;250,334;250,277;250,277;250,226;250,226;250,175;250,175;250,127;250,127;250,334;250,334" keyTimes="0;0.08;0.22;0.3;0.4;0.48;0.56;0.62;0.7;0.9;0.95;1" dur="5s" repeatCount="indefinite"></animateTransform>
+<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.04;0.88;0.92;1" dur="5s" repeatCount="indefinite"></animate>
+<g><animateTransform attributeName="transform" type="scale" values="1;0.7;0.48;0.24;1" keyTimes="0;0.08;0.48;0.7;0.95" dur="5s" calcMode="discrete" repeatCount="indefinite"></animateTransform>
+<path d="M-14,-7 Q0,-9 14,-7.5 Q15.5,0 14,7.5 Q0,9 -14,7.5 Q-15.5,0 -14,-7 Z" fill="#fab387" stroke="#fab387" stroke-width="1" stroke-linejoin="round"><animate attributeName="fill" values="#fab387;#f9e2af;#f9e2af;#cba6f7;#fab387" keyTimes="0;0.08;0.48;0.7;0.95" dur="5s" calcMode="discrete" repeatCount="indefinite"></animate><animate attributeName="stroke" values="#fab387;#f9e2af;#f9e2af;#cba6f7;#fab387" keyTimes="0;0.08;0.48;0.7;0.95" dur="5s" calcMode="discrete" repeatCount="indefinite"></animate></path></g></g>
+
+<g><animateTransform attributeName="transform" type="translate" values="250,334;250,334;430,334;430,334;430,277;430,277;430,226;430,226;430,175;430,175;430,127;430,127;250,334;250,334" keyTimes="0;0.06;0.24;0.32;0.42;0.5;0.58;0.64;0.7;0.76;0.82;0.92;0.96;1" dur="6.5s" repeatCount="indefinite"></animateTransform>
+<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.03;0.9;0.94;1" dur="6.5s" repeatCount="indefinite"></animate>
+<g><animateTransform attributeName="transform" type="scale" values="1;0.7;0.48;0.24;1" keyTimes="0;0.32;0.64;0.82;0.96" dur="6.5s" calcMode="discrete" repeatCount="indefinite"></animateTransform>
+<path d="M-14,-7 Q0,-9 14,-7.5 Q15.5,0 14,7.5 Q0,9 -14,7.5 Q-15.5,0 -14,-7 Z" fill="#eba0ac" stroke="#eba0ac" stroke-width="1" stroke-linejoin="round"><animate attributeName="fill" values="#eba0ac;#f9e2af;#f9e2af;#cba6f7;#eba0ac" keyTimes="0;0.32;0.64;0.82;0.96" dur="6.5s" calcMode="discrete" repeatCount="indefinite"></animate><animate attributeName="stroke" values="#eba0ac;#f9e2af;#f9e2af;#cba6f7;#eba0ac" keyTimes="0;0.32;0.64;0.82;0.96" dur="6.5s" calcMode="discrete" repeatCount="indefinite"></animate></path></g></g>
+
+<g><animateTransform attributeName="transform" type="translate" values="562,226;562,226;562,175;562,175;562,127;562,127;562,226;562,226" keyTimes="0;0.12;0.34;0.46;0.62;0.9;0.95;1" dur="2.5s" repeatCount="indefinite"></animateTransform>
+<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.88;0.92;1" dur="2.5s" repeatCount="indefinite"></animate>
+<g><animateTransform attributeName="transform" type="scale" values="0.7;0.48;0.24;0.7" keyTimes="0;0.12;0.62;0.95" dur="2.5s" calcMode="discrete" repeatCount="indefinite"></animateTransform>
+<path d="M-14,-7 Q0,-9 14,-7.5 Q15.5,0 14,7.5 Q0,9 -14,7.5 Q-15.5,0 -14,-7 Z" fill="#f9e2af" stroke="#f9e2af" stroke-width="1" stroke-linejoin="round"><animate attributeName="fill" values="#f9e2af;#cba6f7;#f9e2af" keyTimes="0;0.62;0.95" dur="2.5s" calcMode="discrete" repeatCount="indefinite"></animate><animate attributeName="stroke" values="#f9e2af;#cba6f7;#f9e2af" keyTimes="0;0.62;0.95" dur="2.5s" calcMode="discrete" repeatCount="indefinite"></animate></path></g></g>
+
+<text style="fill:#eba0ac;font-family:ui-monospace,monospace;font-size:11px" x="340" y="438" text-anchor="middle" dominant-baseline="central">core 2's page lives on node 0, so it crosses the link before climbing</text>
+<text style="fill:#6c7086;font-family:ui-monospace,monospace;font-size:11px" x="340" y="458" text-anchor="middle" dominant-baseline="central">each ip stalls on its load until the word lands, then moves on</text>
+</svg>

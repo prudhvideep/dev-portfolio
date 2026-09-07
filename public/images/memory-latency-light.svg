@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 680 416" role="img" aria-label="Memory access latency by tier on a logarithmic scale, from CPU registers at 0.3 nanoseconds to a hard disk at 8 milliseconds">
+  <title>Memory access latency per tier (log scale)</title>
+  <desc>Eight memory tiers from CPU registers down to a hard disk, each drawn as a horizontal bar whose length is proportional to the base-10 logarithm of its access latency. Latency spans roughly seven orders of magnitude, from 0.3 ns at the registers to 8 ms at the disk, with decade gridlines marking the nanosecond, microsecond and millisecond boundaries.</desc>
+
+  <!-- decade gridlines (behind bars) -->
+  <path d="M215.5,52 V372" fill="none" stroke="#e3d9bd" stroke-width="1" stroke-dasharray="2 5"></path>
+  <path d="M263,52 V372" fill="none" stroke="#e3d9bd" stroke-width="1" stroke-dasharray="2 5"></path>
+  <path d="M310.5,52 V372" fill="none" stroke="#e3d9bd" stroke-width="1" stroke-dasharray="2 5"></path>
+  <path d="M358,52 V372" fill="none" stroke="#e3d9bd" stroke-width="1" stroke-dasharray="2 5"></path>
+  <path d="M405.5,52 V372" fill="none" stroke="#e3d9bd" stroke-width="1" stroke-dasharray="2 5"></path>
+  <path d="M453,52 V372" fill="none" stroke="#e3d9bd" stroke-width="1" stroke-dasharray="2 5"></path>
+  <path d="M500.5,52 V372" fill="none" stroke="#e3d9bd" stroke-width="1" stroke-dasharray="2 5"></path>
+  <path d="M548,52 V372" fill="none" stroke="#e3d9bd" stroke-width="1" stroke-dasharray="2 5"></path>
+
+  <!-- registers -->
+  <text style="fill:#8839ef;font-family:ui-monospace,monospace;font-size:12px" x="24" y="61" dominant-baseline="central">registers</text>
+  <text style="fill:#8a8271;font-family:ui-monospace,monospace;font-size:10px" x="24" y="74" dominant-baseline="central">&lt;1 KB</text>
+  <rect x="168" y="58" width="23" height="16" rx="4" fill="#8839ef" fill-opacity="0.14" stroke="#8839ef" stroke-width="1.2"><animate attributeName="width" values="0;23" dur="0.7s" begin="0.10s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.2 1"></animate></rect>
+  <text style="fill:#8839ef;font-family:ui-monospace,monospace;font-size:12px" x="199" y="66" dominant-baseline="central">0.3 ns</text>
+
+  <!-- L1 cache -->
+  <text style="fill:#179299;font-family:ui-monospace,monospace;font-size:12px" x="24" y="103" dominant-baseline="central">L1 cache</text>
+  <text style="fill:#8a8271;font-family:ui-monospace,monospace;font-size:10px" x="24" y="116" dominant-baseline="central">32–64 KB</text>
+  <rect x="168" y="100" width="48" height="16" rx="4" fill="#179299" fill-opacity="0.14" stroke="#179299" stroke-width="1.2"><animate attributeName="width" values="0;48" dur="0.7s" begin="0.22s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.2 1"></animate></rect>
+  <text style="fill:#179299;font-family:ui-monospace,monospace;font-size:12px" x="224" y="108" dominant-baseline="central">1 ns</text>
+
+  <!-- L2 cache -->
+  <text style="fill:#209fb5;font-family:ui-monospace,monospace;font-size:12px" x="24" y="145" dominant-baseline="central">L2 cache</text>
+  <text style="fill:#8a8271;font-family:ui-monospace,monospace;font-size:10px" x="24" y="158" dominant-baseline="central">0.5–2 MB</text>
+  <rect x="168" y="142" width="76" height="16" rx="4" fill="#209fb5" fill-opacity="0.14" stroke="#209fb5" stroke-width="1.2"><animate attributeName="width" values="0;76" dur="0.7s" begin="0.34s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.2 1"></animate></rect>
+  <text style="fill:#209fb5;font-family:ui-monospace,monospace;font-size:12px" x="252" y="150" dominant-baseline="central">4 ns</text>
+
+  <!-- L3 cache -->
+  <text style="fill:#1e66f5;font-family:ui-monospace,monospace;font-size:12px" x="24" y="187" dominant-baseline="central">L3 cache</text>
+  <text style="fill:#8a8271;font-family:ui-monospace,monospace;font-size:10px" x="24" y="200" dominant-baseline="central">8–64 MB</text>
+  <rect x="168" y="184" width="99" height="16" rx="4" fill="#1e66f5" fill-opacity="0.14" stroke="#1e66f5" stroke-width="1.2"><animate attributeName="width" values="0;99" dur="0.7s" begin="0.46s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.2 1"></animate></rect>
+  <text style="fill:#1e66f5;font-family:ui-monospace,monospace;font-size:12px" x="275" y="192" dominant-baseline="central">12 ns</text>
+
+  <!-- main memory -->
+  <text style="fill:#40a02b;font-family:ui-monospace,monospace;font-size:12px" x="24" y="229" dominant-baseline="central">main memory</text>
+  <text style="fill:#8a8271;font-family:ui-monospace,monospace;font-size:10px" x="24" y="242" dominant-baseline="central">8–128 GB</text>
+  <rect x="168" y="226" width="138" height="16" rx="4" fill="#40a02b" fill-opacity="0.14" stroke="#40a02b" stroke-width="1.2"><animate attributeName="width" values="0;138" dur="0.7s" begin="0.58s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.2 1"></animate></rect>
+  <text style="fill:#40a02b;font-family:ui-monospace,monospace;font-size:12px" x="314" y="234" dominant-baseline="central">80 ns</text>
+
+  <!-- NVMe SSD -->
+  <text style="fill:#fe640b;font-family:ui-monospace,monospace;font-size:12px" x="24" y="271" dominant-baseline="central">NVMe SSD</text>
+  <text style="fill:#8a8271;font-family:ui-monospace,monospace;font-size:10px" x="24" y="284" dominant-baseline="central">0.5–4 TB</text>
+  <rect x="168" y="268" width="271" height="16" rx="4" fill="#fe640b" fill-opacity="0.14" stroke="#fe640b" stroke-width="1.2"><animate attributeName="width" values="0;271" dur="0.7s" begin="0.70s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.2 1"></animate></rect>
+  <text style="fill:#fe640b;font-family:ui-monospace,monospace;font-size:12px" x="447" y="276" dominant-baseline="central">50 µs</text>
+
+  <!-- SATA SSD -->
+  <text style="fill:#e64553;font-family:ui-monospace,monospace;font-size:12px" x="24" y="313" dominant-baseline="central">SATA SSD</text>
+  <text style="fill:#8a8271;font-family:ui-monospace,monospace;font-size:10px" x="24" y="326" dominant-baseline="central">0.5–4 TB</text>
+  <rect x="168" y="310" width="293" height="16" rx="4" fill="#e64553" fill-opacity="0.14" stroke="#e64553" stroke-width="1.2"><animate attributeName="width" values="0;293" dur="0.7s" begin="0.82s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.2 1"></animate></rect>
+  <text style="fill:#e64553;font-family:ui-monospace,monospace;font-size:12px" x="469" y="318" dominant-baseline="central">150 µs</text>
+
+  <!-- hard disk -->
+  <text style="fill:#cb3a2a;font-family:ui-monospace,monospace;font-size:12px" x="24" y="355" dominant-baseline="central">hard disk</text>
+  <text style="fill:#8a8271;font-family:ui-monospace,monospace;font-size:10px" x="24" y="368" dominant-baseline="central">1–20 TB</text>
+  <rect x="168" y="352" width="375" height="16" rx="4" fill="#cb3a2a" fill-opacity="0.14" stroke="#cb3a2a" stroke-width="1.2"><animate attributeName="width" values="0;375" dur="0.7s" begin="0.94s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.2 1"></animate></rect>
+  <text style="fill:#cb3a2a;font-family:ui-monospace,monospace;font-size:12px" x="551" y="360" dominant-baseline="central">8 ms</text>
+
+  <!-- axis boundary labels -->
+  <text style="fill:#6f6857;font-family:ui-monospace,monospace;font-size:10px" x="215.5" y="384" text-anchor="middle" dominant-baseline="central">1 ns</text>
+  <text style="fill:#6f6857;font-family:ui-monospace,monospace;font-size:10px" x="358" y="384" text-anchor="middle" dominant-baseline="central">1 µs</text>
+  <text style="fill:#6f6857;font-family:ui-monospace,monospace;font-size:10px" x="500.5" y="384" text-anchor="middle" dominant-baseline="central">1 ms</text>
+
+  <text style="fill:#6f6857;font-family:ui-monospace,monospace;font-size:11px" x="340" y="403" text-anchor="middle" dominant-baseline="central">bar length ∝ log(latency) — each gridline is 10× slower</text>
+</svg>
