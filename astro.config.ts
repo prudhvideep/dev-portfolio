@@ -11,6 +11,7 @@ import {
 } from "@shikijs/transformers";
 import { transformerFileName } from "./src/utils/transformers/fileName";
 import { transformerCaption } from "./src/utils/transformers/caption";
+import { transformerCollapse } from "./src/utils/transformers/collapse";
 import { SITE } from "./src/config";
 
 // https://astro.build/config
@@ -29,7 +30,7 @@ export default defineConfig({
       },
     }),
     sitemap({
-      filter: page => SITE.showArchives || !page.endsWith("/archives"),
+      filter: (page) => SITE.showArchives || !page.endsWith("/archives"),
     }),
   ],
   markdown: {
@@ -45,6 +46,7 @@ export default defineConfig({
         transformerNotationHighlight(),
         transformerNotationWordHighlight(),
         transformerNotationDiff({ matchAlgorithm: "v3" }),
+        transformerCollapse({ maxLines: 15, previewLines: 12 }),
       ],
     },
   },

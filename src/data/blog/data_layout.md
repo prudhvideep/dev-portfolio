@@ -2,7 +2,7 @@
 title: "Layout Matters"
 pubDatetime: 2026-08-24T00:18:48Z
 description: "Data layout can affect cache locality"
-tags: [concurrency, sockets, kqueue]
+tags: [concurrency, sockets]
 featured: false
 ---
 

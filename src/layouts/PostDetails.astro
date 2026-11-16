@@ -282,6 +282,42 @@ const nextPost =
   }
   attachCopyButtons();
 
+  /** Adds a show all / show less toggle to long code blocks. The
+   *  `collapsible` class comes from src/utils/transformers/collapse.js */
+  function attachCollapseToggles() {
+    const codeBlocks = Array.from(
+      document.querySelectorAll("pre.collapsible")
+    );
+
+    for (const codeBlock of codeBlocks) {
+      // attachCopyButtons already wrapped each block in a relative parent
+      const wrapper = codeBlock.parentElement;
+      if (!wrapper) continue;
+
+      const showLabel = `Show all ${codeBlock.dataset.lines} lines`;
+      const toggle = document.createElement("button");
+      toggle.type = "button";
+      toggle.className =
+        "code-toggle absolute -bottom-3 left-1/2 -translate-x-1/2 rounded bg-muted border border-muted px-2 py-1 text-xs leading-4 text-foreground font-medium";
+      toggle.textContent = showLabel;
+      toggle.setAttribute("aria-expanded", "false");
+      wrapper.appendChild(toggle);
+
+      toggle.addEventListener("click", () => {
+        const expanded = codeBlock.classList.toggle("expanded");
+        toggle.textContent = expanded ? "Show less" : showLabel;
+        toggle.setAttribute("aria-expanded", String(expanded));
+
+        // after collapsing a long block, bring it back into view
+        // instead of leaving the reader far below it
+        if (!expanded && wrapper.getBoundingClientRect().top < 0) {
+          wrapper.scrollIntoView({ block: "start" });
+        }
+      });
+    }
+  }
+  attachCollapseToggles();
+
   /* Go to page start after page swap */
   document.addEventListener("astro:after-swap", () =>
     window.scrollTo({ left: 0, top: 0, behavior: "instant" })
