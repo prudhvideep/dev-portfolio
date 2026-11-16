@@ -2,8 +2,8 @@
 title: "Layout Matters"
 pubDatetime: 2026-08-24T00:18:48Z
 description: "Data layout can affect cache locality"
-tags: [dod, cache locality, performance]
-featured: true
+tags: [concurrency, sockets, kqueue]
+featured: false
 ---
 
 Programming languages abstract out the spatial topology of memory by modelling it as a flat array. This model attaches a similar cost to all memory accesses. In reality, memory layout influences the speed at which CPU can fetch the data required to carry out a computation.
