@@ -107,7 +107,7 @@ fn main() -> io::Result<()> {
 }
 ```
 
-Now we can serve multiple clients at the same time. Still, there is an issue with this approach. This server will always keep one CPU core busy, as we poll for connections and data even when there are none. Ideally, we want to offload polling to the kernel; our server's workload should be: register interest in the sockets, then wake when notified that a socket is ready.  
+Now we can serve multiple clients at the same time. Still, there is an issue with this approach. This server will always keep one CPU core busy, as we poll for incoming connections and data even when there is no client activity. Ideally, we want to offload polling to the kernel; our server's workload should be: register interest in activity on a socket and wake up when the socket is ready.  
 
 ### A Solution
 
@@ -153,4 +153,4 @@ fn main() -> io::Result<()> {
 
 ### A Caveat
 
-In the readiness model, the application is notified when the event is ready. An I/O operation involving files is always ready as the data is available to read, and all file I/O calls block the event loop. Most operating systems lack a proper async API to handle file I/O, so an event loop often has a separate thread pool to perform blocking tasks. Tokio and Node.js offload file I/O to a dedicated thread pool. I will implement support for file I/O in `pyro` and update this post or write another dedicated post.
+In the readiness model, the application is notified when the event is ready. An I/O operation involving files is always ready as the data is available to read, and all file I/O calls block the event loop. macOS lacks a coherent async API to handle file I/O, so an event loop implementation is paired up with a separate thread pool to perform blocking tasks. Tokio and Node.js offload file I/O to a dedicated thread pool. I will implement support for file I/O in `pyro` and update this post or write another dedicated post.
